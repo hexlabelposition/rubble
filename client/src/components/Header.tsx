@@ -1,16 +1,15 @@
-import Logo from './Logo'
-import Menu from './Menu'
-import Container from './Container'
+import Logo from './shared/Logo'
+import menu from '../assets/icons/menu.svg'
 
 export default function Header() {
   return (
     <header className="bg-primary-0 py-[14px]">
-      <Container>
-        <nav className="flex items-center justify-between">
+      <div className="container">
+        <div className="flex items-center justify-between">
           <Logo />
-          <Menu />
-        </nav>
-      </Container>
+          <img src={menu} alt="Menu" />
+        </div>
+      </div>
     </header>
   )
 }

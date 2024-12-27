@@ -1,9 +1,9 @@
-import Container from './Container'
-import Logo from './Logo'
+import Container from './shared/Container'
+import Logo from './shared/Logo'
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-0 py-6">
+    <footer className="py-6">
       <Container className="flex flex-col gap-10">
         <div className="flex flex-col gap-7">
           <div className="flex flex-col gap-3">

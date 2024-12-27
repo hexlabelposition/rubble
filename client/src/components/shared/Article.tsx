@@ -5,14 +5,11 @@ interface ArticleProps {
   className?: string
 }
 
-export default function Article({
-  children,
-  className = undefined,
-}: ArticleProps) {
+export default function Article({ children, className }: ArticleProps) {
   return (
     <article
       className={classNames(
-        'rounded-[10px] border border-secondary-200 p-4',
+        'rounded-xl border border-secondary-200 p-4',
         className
       )}
     >

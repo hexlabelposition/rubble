@@ -1,21 +1,31 @@
-import Section from './Section'
-import Container from './Container'
-import SectionHeader from './SectionHeader'
+import Section from './shared/Section'
+import Container from './shared/Container'
+import Label from './shared/Label'
 import about from '../assets/images/about.jpg'
 import topLeftArrow from '../assets/icons/top-right-arrow.svg'
+import Article from './shared/Article'
 
 export default function About() {
   return (
     <Section>
       <Container>
-        <SectionHeader
-          label="About Rubble"
-          title="Trusted Partner for Your Journey"
-          description="We manage properties efficiently, ensuring
-          the best renting or selling experience."
-        />
-        <div>
-          <div className="mb-4 rounded-[10px] border border-secondary-200 bg-primary-0 p-4">
+        <header className="mb-7 text-center">
+          <div className="mb-3">
+            <Label>About Rubble</Label>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xl font-semibold text-primary-500">
+              Trusted Partner for Your Journey
+            </p>
+            <p className="text-sm font-medium text-secondary-500">
+              We manage properties efficiently, ensuring the best renting or
+              selling experience.
+            </p>
+          </div>
+        </header>
+
+        <div className="grid gap-4">
+          <Article>
             <p className="mb-2 text-base font-semibold text-primary-500">
               Partner for Every Property Need
             </p>
@@ -30,7 +40,7 @@ export default function About() {
               height={220}
               alt="Completed Property"
             />
-          </div>
+          </Article>
 
           <div className="grid grid-cols-2 grid-rows-2 gap-4">
             <div className="flex flex-col gap-10 rounded-xl border border-secondary-200 p-4">

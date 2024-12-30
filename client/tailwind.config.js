@@ -2,26 +2,25 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      tablet: '640px',
+      laptop: '1040px',
+      desktop: '1440px',
+    },
     container: {
       center: true,
       padding: {
         DEFAULT: '1.5rem',
+        tablet: '2rem',
+        laptop: '2.5rem',
+        desktop: '3rem',
       },
     },
-    fontSize: {
-      xxs: ['0.625rem', { lineHeight: '1.5' }],
-      xs: ['0.75rem', { lineHeight: '150%' }],
-      sm: ['0.875rem', { lineHeight: '150%' }],
-      base: ['1rem', { lineHeight: '150%' }],
-      lg: ['1.125rem', { lineHeight: '150%' }],
-      xl: ['1.25rem', { lineHeight: '150%' }],
-      '2xl': ['1.5rem', { lineHeight: '150%' }],
-      '3xl': ['1.75rem', { lineHeight: '150%' }],
-      '4xl': ['2rem', { lineHeight: '150%' }],
-      '5xl': ['2.5rem', { lineHeight: '150%' }],
-      '6xl': ['3rem', { lineHeight: '150%' }],
-      '7xl': ['3.5rem', { lineHeight: '150%' }],
-      '8xl': ['4.25rem', { lineHeight: '140%' }],
+    fontFamily: {
+      manrope: ['Manrope', 'serif'],
+    },
+    backgroundImage: {
+      hero: "url('/src/assets/images/hero.jpg')",
     },
     colors: {
       primary: {
@@ -81,10 +80,26 @@ export default {
         100: '#f7f7f7',
       },
     },
-    backgroundImage: {
-      hero: "url('/src/assets/images/hero.jpg')",
+    fontSize: {
+      xxs: ['0.625rem', { lineHeight: '150%' }],
+      xs: ['0.75rem', { lineHeight: '150%' }],
+      sm: ['0.875rem', { lineHeight: '150%' }],
+      base: ['1rem', { lineHeight: '150%' }],
+      lg: ['1.125rem', { lineHeight: '150%' }],
+      xl: ['1.25rem', { lineHeight: '150%' }],
+      '2xl': ['1.5rem', { lineHeight: '150%' }],
+      '3xl': ['1.75rem', { lineHeight: '150%' }],
+      '4xl': ['2rem', { lineHeight: '150%' }],
+      '5xl': ['2.5rem', { lineHeight: '150%' }],
+      '6xl': ['3rem', { lineHeight: '150%' }],
+      '7xl': ['3.5rem', { lineHeight: '150%' }],
+      '8xl': ['4.25rem', { lineHeight: '140%' }],
     },
-    extend: {},
+    extend: {
+      spacing: {
+        15: '3.75rem',
+      },
+    },
   },
   plugins: [],
 }

@@ -4,4 +4,16 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': '/src',
+      '@assets': '/src/assets',
+      '@components': '/src/components',
+      '@ui': '/src/ui',
+      '@pages': '/src/pages',
+      '@utils': '/src/utils',
+      '@modules': '/src/modules',
+      '@layout': '/src/layout',
+    },
+  },
 })

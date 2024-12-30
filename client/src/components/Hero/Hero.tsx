@@ -1,4 +1,4 @@
-import Container from './shared/Container'
+import Container from '@ui/Container'
 
 export default function Hero() {
   return (

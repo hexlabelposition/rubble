@@ -1,10 +1,3 @@
-import Section from './shared/Section'
-import Container from './shared/Container'
-import Label from './shared/Label'
-import about from '../assets/images/about.jpg'
-import topLeftArrow from '../assets/icons/top-right-arrow.svg'
-import Article from './shared/Article'
-
 export default function About() {
   return (
     <Section>

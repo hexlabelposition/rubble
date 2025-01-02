@@ -5,6 +5,8 @@ type SectionProps = React.HTMLAttributes<HTMLElement>
 
 export default function Section({ children, className }: SectionProps) {
   return (
-    <section className={mergeClasses('py-10', className)}>{children}</section>
+    <section className={mergeClasses('py-10 desktop:py-20', className)}>
+      {children}
+    </section>
   )
 }

@@ -17,7 +17,7 @@ export default function Label({
       form={form}
       htmlFor={htmlFor}
       className={mergeClasses(
-        'text-sm font-semibold text-primary-500',
+        'text-sm font-semibold text-primary-500 desktop:text-base',
         className
       )}
       {...props}

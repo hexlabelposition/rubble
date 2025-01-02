@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    './src/styles/index.css',
+  ],
   theme: {
     screens: {
       tablet: '640px',
@@ -18,9 +22,6 @@ export default {
     },
     fontFamily: {
       manrope: ['Manrope', 'serif'],
-    },
-    backgroundImage: {
-      hero: "url('/src/assets/images/hero.jpg')",
     },
     colors: {
       primary: {

@@ -39,3 +39,13 @@
     font-family: 'Manrope', serif;
   }
 }
+
+@layer components {
+  .bg-hero {
+    background-image: url('./src/assets/images/hero.jpg');
+    background-color: rgba(121, 143, 151, 255);
+    background-size: cover;
+    background-position: 58% 100%;
+    background-repeat: no-repeat;
+  }
+}

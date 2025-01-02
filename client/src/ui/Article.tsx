@@ -11,7 +11,7 @@ export default function Article({
   return (
     <article
       className={mergeClasses(
-        'rounded-xl border border-secondary-200 p-4',
+        'rounded-xl border border-secondary-200 p-4 desktop:rounded-2xl desktop:p-6',
         className
       )}
       {...props}

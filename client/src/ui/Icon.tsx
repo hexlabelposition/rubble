@@ -24,10 +24,10 @@ const icons = {
   logo: logoIcon,
   maximize: maximizeIcon,
   menu: menuIcon,
-  topRightArrow: topRightArrowIcon,
+  'top-right-arrow': topRightArrowIcon,
 }
 
-type IconNames = keyof typeof icons
+export type IconNames = keyof typeof icons
 
 interface IconProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   name: IconNames

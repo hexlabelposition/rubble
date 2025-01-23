@@ -1,14 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-    './src/styles/index.css',
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
       tablet: '640px',
-      laptop: '1040px',
+      laptop: '1024px',
       desktop: '1440px',
     },
     container: {
@@ -16,12 +12,12 @@ export default {
       padding: {
         DEFAULT: '1.5rem',
         tablet: '2rem',
-        laptop: '2.5rem',
+        laptop: '3rem',
         desktop: '3rem',
       },
     },
     fontFamily: {
-      manrope: ['Manrope', 'serif'],
+      serif: ['Manrope', 'serif'],
     },
     colors: {
       primary: {
@@ -96,9 +92,33 @@ export default {
       '7xl': ['3.5rem', { lineHeight: '150%' }],
       '8xl': ['4.25rem', { lineHeight: '140%' }],
     },
+    borderRadius: {
+      none: '0',
+      sm: '0.5rem',
+      DEFAULT: '0.625rem',
+      md: '0.75rem',
+      lg: '0.875rem',
+      xl: '1rem',
+      full: '9999px',
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      lg: '1.2px',
+    },
     extend: {
       spacing: {
+        4.5: '1.125rem',
+        5.5: '1.375rem',
+        6.5: '1.625rem',
         15: '3.75rem',
+        26: '6.25rem',
+      },
+      height: {
+        divider: '1px',
+        'divider-lg': '1.2px',
+      },
+      gridTemplateColumns: {
+        '1/2/1': '1fr 2fr 1fr',
       },
     },
   },

@@ -26,12 +26,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
-      'linebreak-style': ['error', 'unix'], // Use the rule to end strings
-      'prettier/prettier': ['error'], // Enabling the rule for Prettier
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
   }
 )

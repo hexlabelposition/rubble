@@ -41,8 +41,8 @@ const navigationLinks: NavigationLink[] = [
 
 export default function DesktopNavigation(): React.JSX.Element {
   return (
-    <nav className="hidden justify-self-center laptop:flex">
-      <ul className="flex items-center gap-7 desktop:gap-[34px]">
+    <nav className="desktop:flex hidden justify-self-center">
+      <ul className="desktop:gap-17 flex items-center">
         {navigationLinks.map(({ to, title }: NavigationLink, index: number) => (
           <li key={index}>
             <Link to={to} apperance="navigation" active>

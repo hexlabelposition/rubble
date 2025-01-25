@@ -21,7 +21,7 @@ const legalLinks: LegalLink[] = [
 
 export default function Legal(): React.JSX.Element {
   return (
-    <ul className="flex flex-col-reverse justify-center gap-4 tablet:flex-row tablet:justify-between">
+    <ul className="desktop:flex-row desktop:justify-between flex flex-col-reverse justify-center gap-8">
       {legalLinks.map(({ to, title }: LegalLink, index: number) => (
         <li key={index}>
           <Link to={to} apperance="navigation">

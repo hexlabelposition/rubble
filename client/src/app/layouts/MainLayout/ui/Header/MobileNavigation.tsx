@@ -8,6 +8,9 @@ import Container from '@shared/ui/Container'
 // Shared - Assets
 import CloseIcon from '@shared/assets/icons/Close'
 
+// Shared - Lib
+import { mergeClasses } from '@shared/lib/mergeClasses'
+
 // Providers
 import { useMenu } from '@app/providers/StoreProvider'
 
@@ -51,9 +54,10 @@ export default function MobileNavigation(): React.JSX.Element {
   const { isOpenMenu, toogleMenu } = useMenu()
   return (
     <nav
-      className={`fixed inset-0 flex flex-col bg-primary-0 py-3.5 transition-transform duration-300 ease-in-out laptop:hidden ${
+      className={mergeClasses(
+        'bg-primary-0 laptop:hidden fixed inset-0 flex flex-col py-3.5 transition-transform duration-300 ease-in-out',
         isOpenMenu ? 'translate-x-0' : 'translate-x-full'
-      }`}
+      )}
     >
       <Container>
         <div className="mb-8 flex justify-end py-1.5">

@@ -5,14 +5,14 @@ import Typography from '@shared/ui/Typography'
 
 export default function Heading(): React.JSX.Element {
   return (
-    <div className="mb-5 flex flex-col items-center gap-2 text-center laptop:mb-8 laptop:gap-3 desktop:mb-10 desktop:gap-5">
+    <div className="laptop:mb-8 laptop:gap-3 desktop:mb-10 desktop:gap-5 mb-5 flex flex-col items-center gap-2 text-center">
       <Typography tag="h1" className="line-clamp-3 text-balance">
         Discover Your Dream Home Right at Your Fingertips
       </Typography>
 
       <Typography
         tag="p"
-        className="w-[256px] whitespace-pre text-pretty text-xxs text-primary-0 tablet:w-[400px] tablet:whitespace-normal laptop:w-[591px] laptop:text-base"
+        className="text-xxs text-primary-0 tablet:w-[400px] tablet:whitespace-normal laptop:w-[591px] laptop:text-base w-[256px] text-pretty whitespace-pre"
       >
         {/* Text in quotes and brackets for are support whitespace (\n)  */}
         {

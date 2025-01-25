@@ -1,16 +1,10 @@
 import React from 'react'
 
-// Utils
-import { mergeClasses } from '@shared/utils'
-
 interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string
-  width: number
-  height: number
+  width: number | string
+  height: number | string
 }
-
-const BASE_CLASSES = 'block rounded'
-const RESPONSIVE_CLASSES = 'desktop:rounded-xl'
 
 export default function Image({
   src,
@@ -26,7 +20,7 @@ export default function Image({
       width={width}
       height={height}
       aria-hidden={!alt}
-      className={mergeClasses(BASE_CLASSES, RESPONSIVE_CLASSES, className)}
+      className={className}
     />
   )
 }

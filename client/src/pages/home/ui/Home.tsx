@@ -11,7 +11,7 @@ import ContactUs from './ContactUs'
 export default function Home(): React.JSX.Element {
   return (
     <main>
-      <Hero />
+      {/* <Hero /> */}
       <AboutRubble />
       <ServicesWeProvide />
       <PopularProperty />

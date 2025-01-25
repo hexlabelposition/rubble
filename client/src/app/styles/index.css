@@ -1,43 +1,148 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import './fonts.css';
+
+@theme {
+  --text-*: initial;
+  --color-*: initial;
+  --breakpoint-*: initial;
+  --radius-*: initial;
+
+  --font-manrope: Manrope, sans-serif;
+
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 90rem;
+
+  --spacing: 0.125rem;
+
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.5rem;
+  --radius: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  --text-xxs: 0.625rem;
+  --text-xxs--line-height: 150%;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 150%;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 150%;
+  --text-base: 1rem;
+  --text-base--line-height: 150%;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 150%;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 150%;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 150%;
+  --text-3xl: 1.75rem;
+  --text-3xl--line-height: 150%;
+  --text-4xl: 2rem;
+  --text-4xl--line-height: 150%;
+  --text-5xl: 2.5rem;
+  --text-5xl--line-height: 150%;
+  --text-6xl: 3rem;
+  --text-6xl--line-height: 150%;
+  --text-7xl: 3.5rem;
+  --text-7xl--line-height: 150%;
+  --text-8xl: 4.25rem;
+  --text-8xl--line-height: 140%;
+
+  --color-primary-0: #ffffff;
+  --color-primary-100: #e5e5e5;
+  --color-primary-200: #c7c7c7;
+  --color-primary-300: #a4a4a4;
+  --color-primary-400: #787878;
+  --color-primary-500: #292929;
+  --color-primary-600: #252525;
+  --color-primary-700: #202020;
+  --color-primary-800: #1a1a1a;
+  --color-primary-900: #121212;
+
+  --color-secondary-100: #f7f7f7;
+  --color-secondary-200: #eeeeee;
+  --color-secondary-300: #dcdcdc;
+  --color-secondary-400: #c8c8c8;
+  --color-secondary-500: #a5a5a5;
+  --color-secondary-600: #9b9b9b;
+  --color-secondary-700: #878787;
+  --color-secondary-800: #6e6e6e;
+  --color-secondary-900: #4e4e4e;
+
+  --color-warning-100: #fcf6f2;
+  --color-warning-200: #f9e9e1;
+  --color-warning-300: #f3d2be;
+  --color-warning-400: #ecb793;
+  --color-warning-500: #e28502;
+  --color-warning-600: #d57d02;
+  --color-warning-700: #b86d02;
+  --color-warning-800: #975901;
+  --color-warning-900: #6a3f01;
+
+  --color-error-100: #fff3f4;
+  --color-error-200: #ffe3e7;
+  --color-error-300: #ffc2cb;
+  --color-error-400: #ff9bab;
+  --color-error-500: #ff3a6b;
+  --color-error-600: #f34a6b;
+  --color-error-700: #d02f57;
+  --color-error-800: #aa2747;
+  --color-error-900: #781b32;
+
+  --color-info-100: #f2f4ff;
+  --color-info-200: #e2e7ff;
+  --color-info-300: #c0cbff;
+  --color-info-400: #96acff;
+  --color-info-500: #236cff;
+  --color-info-600: #2166f0;
+  --color-info-700: #1d58d0;
+  --color-info-800: #1748aa;
+  --color-info-900: #103378;
+}
 
 @layer base {
-  @font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../../shared/assets/fonts/Manrope-Regular.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(../../shared/assets/fonts/Manrope-Medium.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(../../shared/assets/fonts/Manrope-SemiBold.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(../../shared/assets/fonts/Manrope-Bold.ttf) format('truetype');
-  }
-
   html {
-    @apply scroll-smooth font-serif;
+    @apply font-manrope scroll-smooth;
   }
 
   body {
     @apply bg-primary-0;
+  }
+
+  h1 {
+    @apply text-primary-0 desktop:text-8xl text-4xl font-semibold;
+  }
+
+  h2 {
+    @apply text-primary-500 desktop:text-6xl text-xl font-semibold;
+  }
+
+  h3 {
+    @apply text-primary-500 desktop:text-2xl text-lg font-semibold;
+  }
+
+  p {
+    @apply text-secondary-500 desktop:text-base text-xs font-medium;
+  }
+
+  label {
+    @apply text-primary-500 desktop:text-base text-sm font-semibold;
+  }
+
+  section {
+    @apply desktop:px-40 py-20;
+  }
+
+  article {
+    @apply border-secondary-200 desktop:border-lg desktop:p-12 desktop:rounded-xl rounded border p-8;
+  }
+
+  img {
+    @apply desktop:rounded-lg rounded;
+  }
+
+  hr {
+    @apply border-secondary-200 desktop:h-[1.2px] h-px rounded;
   }
 }
 
@@ -56,4 +161,52 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
+
+  .button-primary {
+    @apply border-primary-300 bg-primary-500 text-primary-0 desktop:border-lg desktop:h-24 desktop:text-base inline-flex h-20 items-center rounded border px-10 text-sm font-semibold;
+  }
+
+  .button-secondary {
+    @apply border-secondary-200 bg-primary-0 text-primary-500 desktop:border-lg desktop:h-24 desktop:text-base inline-flex h-20 items-center rounded border px-10 text-sm font-semibold;
+  }
+
+  .navigation-link {
+    @apply text-secondary-500 desktop:text-base text-xs font-medium;
+  }
+
+  .logo-text {
+    @apply text-primary-500 desktop:text-2xl text-xl font-bold;
+  }
+
+  .label-text {
+    @apply text-xxs text-secondary-500 desktop:text-sm font-medium;
+  }
+
+  .label-section {
+    @apply border-secondary-200 desktop:mb-8 desktop:h-16 desktop:px-6 mb-6 inline-flex h-12 items-center justify-center rounded-xs border px-4;
+  }
+
+  .divider-text {
+    @apply text-secondary-500 desktop:text-base text-xs font-medium;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+
+  @media (min-width: var(--breakpoint-tablet)) {
+    max-width: 48rem;
+  }
+  @media (min-width: var(--breakpoint-laptop)) {
+    max-width: 80rem;
+  }
+  @media (min-width: var(--breakpoint-desktop)) {
+    max-width: 90rem;
+    padding-inline: 3rem;
+  }
+}
+
+@utility border-lg {
+  @apply border-[1.2px];
 }

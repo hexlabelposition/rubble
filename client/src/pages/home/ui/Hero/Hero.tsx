@@ -4,14 +4,14 @@ import React from 'react'
 import Container from '@shared/ui/Container.tsx'
 
 // Subcomponents
-import Heading from './Heading.tsx'
-import Actions from './Actions.tsx'
+import Heading from './Heading'
+import Actions from './Actions'
 
 export default function Hero(): React.JSX.Element {
   return (
-    <div className="py-6 laptop:pt-0 desktop:pb-12">
+    <div className="laptop:pt-0 desktop:pb-12 py-6">
       <Container>
-        <div className="bg-hero h-[568px] rounded px-3 py-15 tablet:h-[668px] tablet:rounded-md laptop:h-[720px] laptop:rounded-lg desktop:h-[867px] desktop:rounded-xl desktop:py-26">
+        <div className="bg-hero tablet:h-[668px] tablet:rounded-md laptop:h-[720px] laptop:rounded-lg desktop:h-[867px] desktop:rounded-xl desktop:py-26 h-[568px] rounded px-3 py-15">
           <Heading />
           <Actions />
         </div>

@@ -8,7 +8,7 @@ import Logo from './Logo'
 
 export default function Branding(): React.JSX.Element {
   return (
-    <div className="grid max-w-[428px] grid-rows-[auto_1fr] gap-3 desktop:gap-4">
+    <div className="desktop:gap-8 grid max-w-[428px] grid-rows-[auto_1fr] gap-6">
       <Logo />
 
       <Typography tag="p">

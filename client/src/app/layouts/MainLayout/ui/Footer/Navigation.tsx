@@ -102,12 +102,12 @@ const navigationLinks: NavigationLinks[] = [
 export default function Navigation(): React.JSX.Element {
   return (
     <nav>
-      <ul className="grid grid-cols-2 gap-6 desktop:grid-cols-4 desktop:gap-20">
+      <ul className="desktop:grid-cols-[auto_auto_auto_auto] desktop:gap-40 grid grid-cols-2 gap-12">
         {navigationLinks.map(({ title, links }: NavigationLinks, index: number) => (
-          <li key={index} className="grid grid-rows-[auto_1fr] gap-5 desktop:gap-6">
+          <li key={index} className="desktop:gap-12 grid grid-rows-[auto_1fr] gap-10">
             <Typography tag="span">{title}</Typography>
 
-            <ul className="grid grid-rows-4 gap-4">
+            <ul className="grid grid-rows-4 gap-8">
               {links.map(({ to, href, title }: NavigationLink, index: number) => (
                 <li key={index}>
                   {to ? (

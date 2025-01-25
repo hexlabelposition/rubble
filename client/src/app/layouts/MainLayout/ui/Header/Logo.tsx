@@ -9,10 +9,10 @@ import LogoIcon from '@shared/assets/icons/Logo'
 
 export default function Logo(): React.JSX.Element {
   return (
-    <Link to="/" className="inline-flex items-center gap-2 desktop:gap-3">
-      <LogoIcon className="desktop:h-11 desktop:w-11" />
+    <Link to="/" className="desktop:gap-6 inline-flex items-center gap-4">
+      <LogoIcon className="desktop:size-22" />
 
-      <Typography tag="span" className="text-xl font-bold text-primary-500 desktop:text-2xl">
+      <Typography tag="span" apperance="logo">
         Rubble
       </Typography>
     </Link>

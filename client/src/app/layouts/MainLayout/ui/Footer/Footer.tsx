@@ -11,15 +11,15 @@ import Legal from './Legal'
 
 export default function Footer(): React.JSX.Element {
   return (
-    <footer className="py-6 laptop:pt-8 desktop:pt-12">
+    <footer className="desktop:pt-24 py-12">
       <Container>
-        <div className="grid gap-10 laptop:gap-20">
-          <div className="grid gap-7 laptop:grid-cols-2 laptop:gap-0">
+        <div className="desktop:gap-40 grid gap-20">
+          <div className="desktop:grid-cols-2 desktop:gap-0 grid gap-14">
             <Branding />
             <Navigation />
           </div>
 
-          <div className="grid gap-4 laptop:gap-6">
+          <div className="desktop:gap-12 grid gap-8">
             <Divider />
             <Legal />
           </div>

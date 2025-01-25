@@ -15,14 +15,12 @@ export default function SectionHeading({
   description,
 }: SectionsHeadingProps): React.JSX.Element {
   return (
-    <header className="mb-7 text-center desktop:mb-10">
-      <div className="mb-3 inline-flex h-6 items-center rounded-md border border-secondary-200 px-2 laptop:mb-4 desktop:h-8 desktop:px-3">
-        <Typography tag="span" className="text-xxs font-medium text-secondary-500 desktop:text-sm">
-          {label}
-        </Typography>
-      </div>
+    <header className="desktop:mb-20 mb-14 text-center">
+      <Typography tag="span" apperance="label" className="label-section">
+        {label}
+      </Typography>
 
-      <Typography tag="h2" className="mb-2 text-pretty">
+      <Typography tag="h2" className="desktop:mb-6 mb-4 text-pretty">
         {title}
       </Typography>
 

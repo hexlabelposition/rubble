@@ -11,9 +11,9 @@ import Actions from './Actions'
 
 export default function Header(): React.JSX.Element {
   return (
-    <header className="py-3.5 tablet:py-4.5 laptop:py-5.5 desktop:py-6.5">
+    <header className="desktop:py-14 py-7">
       <Container>
-        <div className="grid grid-cols-2 items-center laptop:grid-cols-1/2/1">
+        <div className="desktop:grid-cols-[1fr_2fr_1fr] grid grid-cols-2 items-center">
           <Logo />
           <DesktopNavigation />
           <MobileNavigation />

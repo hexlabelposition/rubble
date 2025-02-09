@@ -9,9 +9,14 @@
 
   --font-manrope: Manrope, sans-serif;
 
-  --breakpoint-tablet: 40rem;
-  --breakpoint-laptop: 64rem;
-  --breakpoint-desktop: 90rem;
+  --breakpoint-tablet: 640px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1440px;
+
+  --max-width-mobile: 375px;
+  --max-width-tablet: 640px;
+  --max-width-laptop: 1024px;
+  --max-width-desktop: 1440px;
 
   --spacing: 0.125rem;
 
@@ -109,104 +114,22 @@
     @apply bg-primary-0;
   }
 
-  h1 {
-    @apply text-primary-0 desktop:text-8xl text-4xl font-semibold;
-  }
-
-  h2 {
-    @apply text-primary-500 desktop:text-6xl text-xl font-semibold;
-  }
-
-  h3 {
-    @apply text-primary-500 desktop:text-2xl text-lg font-semibold;
-  }
-
-  p {
-    @apply text-secondary-500 desktop:text-base text-xs font-medium;
-  }
-
-  label {
-    @apply text-primary-500 desktop:text-base text-sm font-semibold;
-  }
-
-  section {
-    @apply desktop:px-40 py-20;
-  }
-
-  article {
-    @apply border-secondary-200 desktop:border-lg desktop:p-12 desktop:rounded-xl rounded border p-8;
-  }
-
-  img {
-    @apply desktop:rounded-lg rounded;
-  }
-
-  hr {
-    @apply border-secondary-200 desktop:h-[1.2px] h-px rounded;
+  button {
+    @apply cursor-pointer;
   }
 }
 
-@layer components {
-  .bg-hero {
-    background-image: url('../../shared/assets/images/hero.jpg');
-    background-color: rgba(121, 143, 151, 255);
-    background-size: cover;
-    background-position: 58% 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bg-auth {
-    background-image: url('../../shared/assets/images/auth.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  .button-primary {
-    @apply border-primary-300 bg-primary-500 text-primary-0 desktop:border-lg desktop:h-24 desktop:text-base inline-flex h-20 items-center rounded border px-10 text-sm font-semibold;
-  }
-
-  .button-secondary {
-    @apply border-secondary-200 bg-primary-0 text-primary-500 desktop:border-lg desktop:h-24 desktop:text-base inline-flex h-20 items-center rounded border px-10 text-sm font-semibold;
-  }
-
-  .navigation-link {
-    @apply text-secondary-500 desktop:text-base text-xs font-medium;
-  }
-
-  .logo-text {
-    @apply text-primary-500 desktop:text-2xl text-xl font-bold;
-  }
-
-  .label-text {
-    @apply text-xxs text-secondary-500 desktop:text-sm font-medium;
-  }
-
-  .label-section {
-    @apply border-secondary-200 desktop:mb-8 desktop:h-16 desktop:px-6 mb-6 inline-flex h-12 items-center justify-center rounded-xs border px-4;
-  }
-
-  .divider-text {
-    @apply text-secondary-500 desktop:text-base text-xs font-medium;
-  }
+@utility bg-auth {
+  background-image: url('../../shared/assets/images/auth.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-@utility container {
-  margin-inline: auto;
-  padding-inline: 1.5rem;
-
-  @media (min-width: var(--breakpoint-tablet)) {
-    max-width: 48rem;
-  }
-  @media (min-width: var(--breakpoint-laptop)) {
-    max-width: 80rem;
-  }
-  @media (min-width: var(--breakpoint-desktop)) {
-    max-width: 90rem;
-    padding-inline: 3rem;
-  }
-}
-
-@utility border-lg {
-  @apply border-[1.2px];
+@utility bg-hero {
+  background-image: url('../../shared/assets/images/hero.jpg');
+  background-color: rgba(121, 143, 151, 255);
+  background-size: cover;
+  background-position: 58% 100%;
+  background-repeat: no-repeat;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
+import { Article } from '@shared/ui/Article'
 
-// Shared - UI
 import TopRightArrowIcon from '@shared/assets/icons/TopRightArrow'
 
 interface Statistic {
@@ -27,20 +27,24 @@ const statistics: Statistic[] = [
   },
 ]
 
-export default function Statistics(): React.JSX.Element {
+export function Statistics(): React.JSX.Element {
   return (
-    <ul className="grid grid-cols-2 grid-rows-2 gap-4 desktop:gap-6">
+    <ul className="desktop:gap-12 grid grid-cols-[155px_155px] grid-rows-[174px_174px] gap-8">
       {statistics.map(({ title, count }, index: number) => (
         <li key={index}>
-          <div className="flex max-h-[258px] min-h-[174px] flex-col justify-between rounded-xl border border-secondary-200 p-4 laptop:h-full">
-            <div className="flex aspect-square h-9 items-center justify-center self-end rounded-full border border-secondary-200 desktop:h-11">
-              <TopRightArrowIcon className="desktop:h-6 desktop:w-6" />
+          <Article className="flex flex-col justify-between">
+            {/* <div className="border-secondary-200 laptop:border-[1.2px] desktop:size-22 grid size-18 place-items-center self-end rounded-full border">
+              <TopRightArrowIcon className="desktop:size-12" />
             </div>
-            <div className="flex flex-col-reverse gap-3 desktop:gap-5">
-              <h4 className="text-xs font-medium text-primary-500 desktop:text-base">{title}</h4>
-              <p className="text-2xl font-medium text-primary-500 desktop:text-5xl">{count}</p>
-            </div>
-          </div>
+            <div className="desktop:gap-10 desktop:max-w-[192px] flex w-full min-w-[123px] flex-col-reverse gap-6">
+              <h4 className="text-primary-500 desktop:text-base text-xs font-medium">
+                {title}
+              </h4>
+              <p className="text-primary-500 desktop:text-5xl text-2xl font-medium">
+                {count}
+              </p>
+            </div> */}
+          </Article>
         </li>
       ))}
     </ul>

@@ -1,23 +1,26 @@
 import React from 'react'
+import { Section } from '@shared/ui/Section'
+import { Container } from '@shared/ui/Container'
+import { SectionHeading } from '@shared/ui/SectionHeading'
 
-// Shared - UI
-import Section from '@shared/ui/Section'
-import Container from '@shared/ui/Container'
-import SectionHeading from '@shared/ui/SectionHeading'
+import { PartnerForProperty } from './PartnerForProperty'
+import { Statistics } from './Statistics'
 
-export default function AboutRubble(): React.JSX.Element {
+export function AboutRubble(): React.JSX.Element {
   return (
     <Section>
       <Container>
         <SectionHeading
-          label="About Rubble"
-          title="Trusted Partner for Your Journey"
-          description="We manage properties efficiently, ensuring the best renting or selling experience."
+          label={'About Rubble'}
+          title={'Trusted Partner for Your Journey'}
+          description={
+            'We manage properties efficiently, ensuring\n the best renting or selling experience.'
+          }
         />
-        {/* <div className="grid gap-4 laptop:grid-cols-[minmax(auto,816px)_auto] desktop:gap-6">
-          <CompleteSolution />
+        <div className="desktop:gap-12 laptop:grid-cols-[auto_auto] grid grid-cols-1 gap-8">
+          <PartnerForProperty />
           <Statistics />
-        </div> */}
+        </div>
       </Container>
     </Section>
   )

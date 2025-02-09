@@ -1,1 +1,1 @@
-export { default } from './AboutRubble.tsx'
+export { AboutRubble } from './AboutRubble'

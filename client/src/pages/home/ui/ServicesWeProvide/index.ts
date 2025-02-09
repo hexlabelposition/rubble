@@ -1,1 +1,1 @@
-export { default } from './ServicesWeProvide'
+export { ServicesWeProvide } from './ServicesWeProvide'

@@ -1,1 +1,1 @@
-export { default } from './PopularProperty'
+export { PopularProperty } from './PopularProperty'

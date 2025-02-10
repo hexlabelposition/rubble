@@ -34,5 +34,5 @@
       "@widgets/*": ["src/widgets/*"]
     }
   },
-  "include": ["src", "src/app/vite-env.d.ts"]
+  "include": ["src", "types/vite-env.d.ts"]
 }

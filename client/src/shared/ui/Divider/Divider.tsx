@@ -1,53 +1,22 @@
 import React from 'react'
-import { Fragment } from 'react'
-import { mergeClasses } from '@shared/lib/mergeClasses/mergeClasses'
+import { mergeClasses } from '@shared/lib/mergeClasses'
 
-interface DividerProps extends React.HTMLAttributes<HTMLHRElement> {
-  children?: string
+interface DividerProps {
+  className?: string
+  style?: never
 }
 
-const BASE_CLASSES = 'border-secondary-200 h-px rounded'
-const RESPONSIVE_CLASSES = 'desktop:h-[1.2px]'
-
-export function Divider({
-  children,
-  className,
-  ...props
-}: DividerProps): React.JSX.Element {
+export function Divider({ className }: DividerProps): React.JSX.Element {
   return (
-    <Fragment>
-      {children ? (
-        <div className="flex w-full items-center">
-          <hr
-            className={mergeClasses(
-              BASE_CLASSES,
-              RESPONSIVE_CLASSES,
-              'flex-grow',
-              className
-            )}
-            {...props}
-          />
-
-          <span className="desktop:px-8 text-secondary-500 desktop:text-base px-4 text-xs font-medium">
-            {children}
-          </span>
-
-          <hr
-            className={mergeClasses(
-              BASE_CLASSES,
-              RESPONSIVE_CLASSES,
-              'flex-grow',
-              className
-            )}
-            {...props}
-          />
-        </div>
-      ) : (
-        <hr
-          className={mergeClasses(BASE_CLASSES, RESPONSIVE_CLASSES, className)}
-          {...props}
-        />
+    <svg
+      width="1"
+      height="1"
+      className={mergeClasses(
+        'stroke-secondary-200 desktop:h-[1.2px] w-full',
+        className
       )}
-    </Fragment>
+    >
+      <line x1="0" y1="0" x2="100%" y2="100%" strokeLinecap="round" />
+    </svg>
   )
 }

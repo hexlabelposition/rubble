@@ -1,7 +1,6 @@
 import React from 'react'
-import { Article } from '@shared/ui/Article'
 
-import TopRightArrowIcon from '@shared/assets/icons/TopRightArrow'
+// import TopRightArrowIcon from '@shared/assets/icons/TopRightArrow'
 
 interface Statistic {
   title: string
@@ -32,7 +31,7 @@ export function Statistics(): React.JSX.Element {
     <ul className="desktop:gap-12 grid grid-cols-[155px_155px] grid-rows-[174px_174px] gap-8">
       {statistics.map(({ title, count }, index: number) => (
         <li key={index}>
-          <Article className="flex flex-col justify-between">
+          <article className="flex flex-col justify-between">
             {/* <div className="border-secondary-200 laptop:border-[1.2px] desktop:size-22 grid size-18 place-items-center self-end rounded-full border">
               <TopRightArrowIcon className="desktop:size-12" />
             </div>
@@ -44,7 +43,7 @@ export function Statistics(): React.JSX.Element {
                 {count}
               </p>
             </div> */}
-          </Article>
+          </article>
         </li>
       ))}
     </ul>

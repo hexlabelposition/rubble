@@ -107,15 +107,11 @@
 
 @layer base {
   html {
-    @apply font-manrope scroll-smooth;
+    @apply font-manrope scroll-smooth antialiased;
   }
 
   body {
     @apply bg-primary-0;
-  }
-
-  button {
-    @apply cursor-pointer;
   }
 }
 
@@ -132,4 +128,12 @@
   background-size: cover;
   background-position: 58% 100%;
   background-repeat: no-repeat;
+}
+
+@utility container {
+  @apply max-w-mobile tablet:max-w-tablet laptop:max-w-laptop desktop:max-w-desktop desktop:px-24 mx-auto px-12;
+}
+
+@utility grid-cols-auto-* {
+  grid-template-columns: repeat(--value(integer), auto);
 }

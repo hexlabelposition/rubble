@@ -11,6 +11,7 @@ export default defineConfig({
       '@entities': '/src/entities',
       '@features': '/src/features',
       '@pages': '/src/pages',
+      '@layouts': '/src/layouts',
       '@shared': '/src/shared',
       '@widgets': '/src/widgets',
     },

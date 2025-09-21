@@ -4,5 +4,5 @@ export default function Home() {
       <h1>Welcome to Rubble!</h1>
       <p>Modern Real Estate Platform</p>
     </div>
-  );
+  )
 }

@@ -1,7 +1,13 @@
 {
   "name": "rubble",
+  "description": "Modern web application built with Next.js, TypeScript and Feature-Sliced Design.",
+  "author": {
+    "name": "Vladyslav Kudriashov",
+    "email": "hexlabelposition@gmail.com"
+  },
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",

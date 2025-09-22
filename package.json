@@ -22,11 +22,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "motion": "^12.23.18",
     "next": "15.5.3",
+    "path-to-regexp": "^8.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-focus-on": "^3.10.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwind-variants": "^3.1.1",
     "usehooks-ts": "^3.1.1",
     "zod": "^4.1.11",
     "zustand": "^5.0.8"

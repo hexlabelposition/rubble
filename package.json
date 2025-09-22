@@ -22,9 +22,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "motion": "^12.23.18",
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-focus-on": "^3.10.0",
+    "usehooks-ts": "^3.1.1",
     "zod": "^4.1.11",
     "zustand": "^5.0.8"
   },

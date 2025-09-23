@@ -151,6 +151,25 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.27.1"
 
+"@conform-to/dom@1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/dom/-/dom-1.10.1.tgz#380629ba94bdb8fd8686ae7766ccaac72fff6c14"
+  integrity sha512-5qYBz2H8mTnEBsMo6juOOuPSytjWy3MsuCPP13MWqVS9GTfSI91FLrSpNnhFquQfhtNESrsMRZK9s2Zg8v1QqA==
+
+"@conform-to/react@^1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/react/-/react-1.10.1.tgz#21c70e934891626d45ffdc99319e6d5a8ffa9860"
+  integrity sha512-vfspLc/9o9q0mvM3WmcU/0ZdGx33SiH4jKEqOfSYitJ4E64FP1uCDsZJ/4O5pd7dzpe/mLyiI+ATbGkFicvAFQ==
+  dependencies:
+    "@conform-to/dom" "1.10.1"
+
+"@conform-to/zod@^1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/zod/-/zod-1.10.1.tgz#5c058c1cbd251bb751372a1db97a3c5d1c0a3678"
+  integrity sha512-6wZ+zbFMlY4MHD1D/a18rojUkKjqdaKKE7v3JOFSaEfRMJ0S+Bgj7zisqvlihxe02kZJuV7b3CKNfTN6rBlaKA==
+  dependencies:
+    "@conform-to/dom" "1.10.1"
+
 "@emnapi/core@^1.4.3", "@emnapi/core@^1.4.5":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.5.0.tgz#85cd84537ec989cebb2343606a1ee663ce4edaf0"

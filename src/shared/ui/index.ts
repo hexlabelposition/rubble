@@ -6,6 +6,7 @@ export { Section } from './kit/Section'
 export { Hotspot } from './kit/Hotspot'
 export { Input } from './kit/Input'
 export { Field } from './kit/Field'
+export { Label } from './kit/Label'
 
 // module: svg
 export { MapPinCheckInsideIcon } from './svg/MapPinCheckInsideIcon'

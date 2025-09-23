@@ -4,6 +4,7 @@ export { Separator } from './kit/Separator'
 export { Card } from './kit/Card'
 
 // module: svg
+export { MoveUpRightIcon } from './svg/MoveUpRightIcon'
 export { MenuIcon } from './svg/MenuIcon'
 export { CloseIcon } from './svg/CloseIcon'
 export { LogoIcon } from './svg/LogoIcon'

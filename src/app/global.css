@@ -59,6 +59,7 @@
   --color-information-900: oklch(24.7% 0.131 264.2);
 
   --color-hero-fallback: oklch(62.5% 0.073 236.6);
+  --color-auth-fallback: oklch(89.6% 0.009 246.1);
 
   /* Multiply by two to calculate the pixels from the design layout. */
   /* Example: You need 20px, px-10 -> (10 * 2 = 20px) */
@@ -168,6 +169,14 @@
     background-image: url('/hero.webp');
     background-color: var(--color-hero-fallback);
     background-position: 61% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-auth {
+    background-image: url('/auth.webp');
+    background-color: var(--color-auth-fallback);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }

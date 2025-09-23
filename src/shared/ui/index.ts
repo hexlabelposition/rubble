@@ -7,6 +7,7 @@ export { Hotspot } from './kit/Hotspot'
 export { Input } from './kit/Input'
 export { Field } from './kit/Field'
 export { Label } from './kit/Label'
+export { Select } from './kit/Select'
 
 // module: svg
 export { ChevronDownIcon } from './svg/ChevronDownIcon'

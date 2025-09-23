@@ -8,6 +8,7 @@ export { Input } from './kit/Input'
 export { Field } from './kit/Field'
 export { Label } from './kit/Label'
 export { Select } from './kit/Select'
+export { Textarea } from './kit/Textarea'
 
 // module: svg
 export { ChevronDownIcon } from './svg/ChevronDownIcon'

@@ -155,3 +155,11 @@
   /* extended container */
   @apply mx-auto px-12 xl:px-24;
 }
+
+@utility grid-cols-auto-* {
+  grid-template-columns: repeat(--value(integer), auto);
+}
+
+@utility grid-rows-auto-* {
+  grid-template-rows: repeat(--value(integer), auto);
+}

@@ -26,6 +26,7 @@
     "@conform-to/zod": "^1.10.1",
     "@floating-ui/react": "^0.27.16",
     "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-separator": "^1.1.7",
     "clsx": "^2.1.1",
     "motion": "^12.23.18",

@@ -2,6 +2,11 @@ import type { Key } from 'react'
 import type { SVGProps } from 'react'
 import type { FunctionComponent } from 'react'
 
+// local imports
+import type { PropertyType } from './enums'
+import type { LocationPreferenceType } from './enums'
+import type { BudgetRangeType } from './enums'
+
 export interface PropertyItem {
   id: string
   title: string
@@ -28,3 +33,27 @@ interface PropertyDetailItem {
 }
 
 export type PropertyDetailList = Array<PropertyDetailItem>
+
+interface PropertyTypeItem {
+  key: Key
+  value: PropertyType
+  title: string
+}
+
+export type PropertyTypeList = PropertyTypeItem[]
+
+interface LocationPreferenceItem {
+  key: Key
+  value: LocationPreferenceType
+  title: string
+}
+
+export type LocationPreferenceList = Array<LocationPreferenceItem>
+
+interface BudgetRangeItem {
+  key: Key
+  value: BudgetRangeType
+  title: string
+}
+
+export type BudgetRangeList = Array<BudgetRangeItem>

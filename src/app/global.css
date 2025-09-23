@@ -58,6 +58,8 @@
   --color-information-800: oklch(34.1% 0.184 264.2);
   --color-information-900: oklch(24.7% 0.131 264.2);
 
+  --color-hero-fallback: oklch(62.5% 0.073 236.6);
+
   /* Multiply by two to calculate the pixels from the design layout. */
   /* Example: You need 20px, px-10 -> (10 * 2 = 20px) */
   --spacing: 0.125rem;
@@ -136,6 +138,10 @@
   --text-8xl--line-height: 140%;
   --text-8xl--letter-spacing: -2%;
 
+  --text-9xl: 5rem;
+  --text-9xl--line-height: 140%;
+  --text-9xl--letter-spacing: -2%;
+
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -154,6 +160,16 @@
 
   body {
     @apply bg-primary-0 text-primary-500 font-medium antialiased;
+  }
+}
+
+@layer components {
+  .bg-hero {
+    background-image: url('/hero.webp');
+    background-color: var(--color-hero-fallback);
+    background-position: 61% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

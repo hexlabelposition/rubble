@@ -11,6 +11,9 @@ export { Select } from './kit/Select'
 export { Textarea } from './kit/Textarea'
 
 // module: svg
+export { SqftIcon } from './svg/SqftIcon'
+export { BedIcon } from './svg/BedIcon'
+export { BathIcon } from './svg/BathIcon'
 export { ChevronDownIcon } from './svg/ChevronDownIcon'
 export { MapPinCheckInsideIcon } from './svg/MapPinCheckInsideIcon'
 export { DollarSquareIcon } from './svg/DollarSquareIcon'

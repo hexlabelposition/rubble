@@ -82,7 +82,10 @@ const Description = ({ className, ...props }: ComponentPropsWithRef<'p'>) => {
 
 const Body = ({ className, ...props }: ComponentPropsWithRef<'div'>) => {
   return (
-    <div className={mergeClasses('max-w-8xl mx-auto', className)} {...props} />
+    <div
+      className={mergeClasses('max-w-8xl mx-auto w-full', className)}
+      {...props}
+    />
   )
 }
 

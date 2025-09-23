@@ -4,6 +4,7 @@ export { Separator } from './kit/Separator'
 export { Card } from './kit/Card'
 export { Section } from './kit/Section'
 export { Hotspot } from './kit/Hotspot'
+export { Input } from './kit/Input'
 
 // module: svg
 export { MapPinCheckInsideIcon } from './svg/MapPinCheckInsideIcon'

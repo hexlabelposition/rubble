@@ -9,6 +9,7 @@ export { Field } from './kit/Field'
 export { Label } from './kit/Label'
 
 // module: svg
+export { ChevronDownIcon } from './svg/ChevronDownIcon'
 export { MapPinCheckInsideIcon } from './svg/MapPinCheckInsideIcon'
 export { DollarSquareIcon } from './svg/DollarSquareIcon'
 export { CalendarDaysIcon } from './svg/CalendarDaysIcon'

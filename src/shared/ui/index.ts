@@ -9,6 +9,7 @@ export { Field } from './kit/Field'
 export { Label } from './kit/Label'
 export { Select } from './kit/Select'
 export { Textarea } from './kit/Textarea'
+export { Accordion } from './kit/Accordion'
 
 // module: svg
 export { PlusIcon } from './svg/PlusIcon'

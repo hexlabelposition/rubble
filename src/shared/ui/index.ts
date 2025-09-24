@@ -11,6 +11,8 @@ export { Select } from './kit/Select'
 export { Textarea } from './kit/Textarea'
 
 // module: svg
+export { PlusIcon } from './svg/PlusIcon'
+export { MinusIcon } from './svg/MinusIcon'
 export { MessageIcon } from './svg/MessageIcon'
 export { GroupIcon } from './svg/GroupIcon'
 export { CallIcon } from './svg/CallIcon'

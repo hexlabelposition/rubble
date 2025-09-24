@@ -13,6 +13,8 @@ export { Accordion } from './kit/Accordion'
 export { Pagination } from './kit/Pagination'
 
 // module: svg
+export { ArrowRightIcon } from './svg/ArrowRightIcon'
+export { ArrowLeftIcon } from './svg/ArrowLeftIcon'
 export { PlusIcon } from './svg/PlusIcon'
 export { MinusIcon } from './svg/MinusIcon'
 export { MessageIcon } from './svg/MessageIcon'

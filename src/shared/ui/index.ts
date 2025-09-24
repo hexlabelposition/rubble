@@ -10,6 +10,7 @@ export { Label } from './kit/Label'
 export { Select } from './kit/Select'
 export { Textarea } from './kit/Textarea'
 export { Accordion } from './kit/Accordion'
+export { Pagination } from './kit/Pagination'
 
 // module: svg
 export { PlusIcon } from './svg/PlusIcon'

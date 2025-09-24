@@ -41,7 +41,7 @@ export default function RegisterPage() {
           <Button
             variant='secondary'
             size='medium'
-            className='gap-x-3 text-sm font-semibold 2xl:text-base'
+            className='gap-x-3 text-sm font-semibold 2xl:min-h-24 2xl:text-base'
           >
             <GoogleIcon aria-hidden={true} width={24} height={24} />
             Register with Google
@@ -50,7 +50,7 @@ export default function RegisterPage() {
           <Button
             variant='secondary'
             size='medium'
-            className='gap-x-3 text-sm font-semibold 2xl:text-base'
+            className='gap-x-3 text-sm font-semibold 2xl:min-h-24 2xl:text-base'
           >
             <FacebookIcon aria-hidden={true} width={24} height={24} />
             Register with Facebook

@@ -25,6 +25,20 @@ const eslintConfig = [
       '.tmp/',
     ],
   },
+  {
+    rules: {
+      // Ensure consistent use of type imports.
+      // Docs: https://typescript-eslint.io/rules/consistent-type-imports/
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        {
+          prefer: 'type-imports',
+          fixStyle: 'separate-type-imports',
+          disallowTypeAnnotations: true,
+        },
+      ],
+    },
+  },
 ]
 
 export default eslintConfig

@@ -1,7 +1,13 @@
 {
   "name": "rubble",
+  "description": "Modern web application built with Next.js, TypeScript and Feature-Sliced Design.",
+  "author": {
+    "name": "Vladyslav Kudriashov",
+    "email": "hexlabelposition@gmail.com"
+  },
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
@@ -9,7 +15,8 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "next": "15.5.4",

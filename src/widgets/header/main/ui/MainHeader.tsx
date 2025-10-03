@@ -32,13 +32,13 @@ export const MainHeader = () => {
             height={36}
             className='xl:size-22'
           />
-          <span className='text-xl font-bold xl:text-2xl'>Rubble</span>
+          <span className='text-xl font-bold 2xl:text-2xl'>Rubble</span>
         </Link>
       </div>
 
       {/* Desktop Navigation */}
       <nav className='hidden flex-auto xl:block'>
-        <ul className='flex items-center justify-center gap-x-17 text-sm xl:text-base'>
+        <ul className='flex items-center justify-center gap-x-17 text-sm 2xl:text-base'>
           {navigation.map(({ key, title, href }) => {
             return (
               <li key={key}>

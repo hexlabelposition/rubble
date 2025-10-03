@@ -19,8 +19,8 @@ const buttonVariants = tv({
     size: {
       'extra-small': 'min-h-16 rounded-sm text-sm font-medium',
       small: 'min-h-18 rounded-sm text-sm font-medium',
-      medium: 'min-h-20 rounded text-base font-semibold',
-      large: 'min-h-24 rounded text-base font-semibold',
+      medium: 'min-h-20 rounded-md text-base font-semibold',
+      large: 'min-h-24 rounded-md text-base font-semibold',
     },
   },
   defaultVariants: {

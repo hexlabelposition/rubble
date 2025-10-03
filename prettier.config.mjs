@@ -14,6 +14,7 @@ const config = {
   bracketSameLine: false,
   arrowParens: 'always',
   plugins: ['prettier-plugin-tailwindcss'],
+  tailwindFunctions: ['tv', 'mergeClasses'],
 }
 
 export default config

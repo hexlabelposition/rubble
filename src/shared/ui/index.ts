@@ -3,3 +3,4 @@ export { Button } from "./kit/Button";
 
 // module: icons
 export { LogoIcon } from "./icons/LogoIcon";
+export { MenuIcon } from "./icons/MenuIcon";

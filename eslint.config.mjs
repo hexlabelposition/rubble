@@ -15,6 +15,7 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
   ]),
   eslintConfigPrettier,
+  globalIgnores([".tmp/**"]),
 ]);
 
 export default eslintConfig;

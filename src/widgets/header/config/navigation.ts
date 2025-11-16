@@ -3,12 +3,12 @@ import { routes } from "@shared/config";
 import type { Key } from "react";
 
 interface NavigationItem {
-  readonly key: Key;
-  readonly title: string;
-  readonly href: string;
+  key: Key;
+  title: string;
+  href: string;
 }
 
-type NavigationList = ReadonlyArray<NavigationItem>;
+type NavigationList = ReadonlyArray<Readonly<NavigationItem>>;
 
 export const navigation: NavigationList = [
   {

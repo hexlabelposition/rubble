@@ -1,0 +1,11 @@
+{
+  // Cross-platform end of line character
+  "files.eol": "\n",
+
+  "files.associations": {
+    // Plain text for LICENSE file
+    "LICENSE": "plaintext",
+    // Tailwind CSS support for CSS files
+    "*.css": "tailwindcss"
+  }
+}

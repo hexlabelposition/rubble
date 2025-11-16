@@ -140,3 +140,7 @@
 @utility grid-rows-auto-* {
   grid-template-rows: repeat(--value(integer), auto);
 }
+
+@utility h-2px {
+  height: 2px;
+}

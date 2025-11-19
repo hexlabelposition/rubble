@@ -32,6 +32,8 @@
   --color-secondary-800: #6e6e6e;
   --color-secondary-900: #4e4e4e;
 
+  --color-hero-fallback: #637580;
+
   --spacing: 0.125rem;
 
   --breakpoint-sm: 40rem;
@@ -56,55 +58,42 @@
 
   --text-2xs: 0.625rem;
   --text-2xs--line-height: 150%;
-  --text-2xs--letter-spacing: 0%;
 
   --text-xs: 0.75rem;
   --text-xs--line-height: 150%;
-  --text-xs--letter-spacing: 0%;
 
   --text-sm: 0.875rem;
   --text-sm--line-height: 150%;
-  --text-sm--letter-spacing: 0%;
 
   --text-base: 1rem;
   --text-base--line-height: 150%;
-  --text-base--letter-spacing: 0%;
 
   --text-lg: 1.125rem;
   --text-lg--line-height: 150%;
-  --text-lg--letter-spacing: 0%;
 
   --text-xl: 1.25rem;
   --text-xl--line-height: 150%;
-  --text-xl--letter-spacing: 0%;
 
   --text-2xl: 1.5rem;
   --text-2xl--line-height: 150%;
-  --text-2xl--letter-spacing: 0%;
 
   --text-3xl: 1.75rem;
   --text-3xl--line-height: 150%;
-  --text-3xl--letter-spacing: 0%;
 
   --text-4xl: 2rem;
   --text-4xl--line-height: 150%;
-  --text-4xl--letter-spacing: 0%;
 
   --text-5xl: 2.5rem;
-  --text-5xl--line-height: 100%;
-  --text-5xl--letter-spacing: -2%;
+  --text-5xl--line-height: 150%;
 
   --text-6xl: 3rem;
   --text-6xl--line-height: 150%;
-  --text-6xl--letter-spacing: -2%;
 
   --text-7xl: 3.5rem;
   --text-7xl--line-height: 150%;
-  --text-7xl--letter-spacing: 0%;
 
   --text-8xl: 4.25rem;
   --text-8xl--line-height: 140%;
-  --text-8xl--letter-spacing: -2%;
 
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -115,15 +104,44 @@
   --radius-md: 0.625rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
+
+  --blur: 4px;
+
+  --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
 }
 
 @layer base {
   html {
     @apply scroll-smooth antialiased;
+
+    scrollbar-gutter: stable both-edges;
   }
 
   body {
     @apply text-primary-500 font-sans font-medium;
+  }
+}
+
+@layer components {
+  .bg-hero {
+    background-image: url("/hero.webp");
+    background-color: var(--color-hero-fallback);
+    background-position: 60% 0%;
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1024px) {
+      background-position: 60% 15%;
+      background-size: cover;
+    }
   }
 }
 

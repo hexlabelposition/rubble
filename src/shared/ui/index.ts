@@ -11,3 +11,7 @@ export { BuildingsIcon } from "./icons/BuildingsIcon";
 export { CalendarDaysIcon } from "./icons/CalendarDaysIcon";
 export { MapPinCheckInsideIcon } from "./icons/MapPinCheckInsideIcon";
 export { DollarSquareIcon } from "./icons/DollarSquareIcon";
+export { MapPinIcon } from "./icons/MapPinIcon";
+export { BedIcon } from "./icons/BedIcon";
+export { BathIcon } from "./icons/BathIcon";
+export { AreaIcon } from "./icons/AreaIcon";

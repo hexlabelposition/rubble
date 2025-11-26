@@ -1,4 +1,15 @@
-export const PopularProperty = () => {
+import Link from "next/link";
+
+import { PropertyCard } from "@entities/property";
+import type { PropertySummaryList } from "@entities/property";
+
+import { routes } from "@shared/config";
+
+interface PopularPropertyProps {
+  properties: PropertySummaryList;
+}
+
+export const PopularProperty = ({ properties }: PopularPropertyProps) => {
   return (
     <section
       id="popular-property"
@@ -17,6 +28,16 @@ export const PopularProperty = () => {
           Discover properties for every need, from cozy homes to luxury estates.
         </p>
       </header>
+
+      <ul className="grid gap-8 2xl:grid-cols-3 2xl:gap-12">
+        {properties.map((property) => (
+          <li key={property.id}>
+            <Link href={routes.propertyDetails(property.id)}>
+              <PropertyCard {...property} />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };

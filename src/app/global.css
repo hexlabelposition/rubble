@@ -1,11 +1,19 @@
 @import "tailwindcss";
 
+/* Default theme from Tailwind CSS */
+/* It can be used as a basis for your own theme.  */
+/* https://tailwindcss.com/docs/theme#default-theme-variable-reference */
+
 @theme {
-  /* Reset default theme */
+  /* # Reset default theme */
+
   --*: initial;
 
-  /* Define custom theme  */
+  /* # Define custom theme  */
+
   /* The Manrope font is optimized using Next.js and passed as a variable(--next-font-manrope) from the root html tag. */
+  /* Ideally, you should use var(--next-font-manrope) instead of “Manrope” here. */
+  /* But I don't want to create unnecessary variables or use variables inside variables. */
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
   --color-primary-0: #ffffff;

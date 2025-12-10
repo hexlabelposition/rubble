@@ -20,7 +20,11 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={`${manrope.variable} scroll-smooth antialiased`}>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${manrope.variable} scroll-smooth antialiased`}
+    >
       <body className="text-primary-500 font-sans font-medium">{children}</body>
     </html>
   );

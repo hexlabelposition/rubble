@@ -37,6 +37,8 @@
   --color-secondary-800: #6e6e6e;
   --color-secondary-900: #4e4e4e;
 
+  --color-hero-fallback: #637580;
+
   --spacing: 0.125rem;
 
   --text-2xs: 0.625rem;
@@ -89,6 +91,7 @@
     cubic-bezier(0.87, 0, 0.13, 1);
   --animate-radix-accordion-down: radixAccordionDown 300ms
     cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 
   @keyframes radixAccordionUp {
     from {
@@ -105,6 +108,29 @@
     }
     to {
       height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+}
+
+@layer components {
+  .bg-hero {
+    background-image: url("/hero.webp");
+    background-color: var(--color-hero-fallback);
+    background-position: 60% 0%;
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1024px) {
+      background-position: 60% 15%;
+      background-size: cover;
     }
   }
 }

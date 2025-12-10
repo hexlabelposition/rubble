@@ -1,0 +1,65 @@
+import { cn } from "tailwind-variants";
+import type { ComponentPropsWithoutRef } from "react";
+
+type SectionRootProps = ComponentPropsWithoutRef<"section">;
+
+const Root = ({ className, ...props }: SectionRootProps) => {
+  return (
+    <section
+      className={cn("flex flex-col gap-y-14 py-20", className)}
+      {...props}
+    />
+  );
+};
+
+type SectionHeaderProps = ComponentPropsWithoutRef<"header">;
+
+const Header = ({ className, ...props }: SectionHeaderProps) => {
+  return (
+    <header
+      className={cn("flex flex-col items-center text-center", className)}
+      {...props}
+    />
+  );
+};
+
+type SectionLabelProps = ComponentPropsWithoutRef<"p">;
+
+const Label = ({ className, ...props }: SectionLabelProps) => {
+  return (
+    <p
+      className={cn(
+        "text-2xs text-secondary-500 border-secondary-200 mb-6 inline-flex min-h-12 items-center justify-center rounded-xs border px-4",
+        className,
+      )}
+      {...props}
+    />
+  );
+};
+
+type SectionTitleProps = ComponentPropsWithoutRef<"h2">;
+
+const Title = ({ className, ...props }: SectionTitleProps) => {
+  return (
+    <h2 className={cn("mb-4 text-xl font-semibold", className)} {...props} />
+  );
+};
+
+type SectionDescriptionProps = ComponentPropsWithoutRef<"p">;
+
+const Description = ({ className, ...props }: SectionDescriptionProps) => {
+  return (
+    <p
+      className={cn("text-secondary-500 text-xs text-balance", className)}
+      {...props}
+    />
+  );
+};
+
+export const Section = {
+  Root,
+  Header,
+  Label,
+  Title,
+  Description,
+};

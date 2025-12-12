@@ -1,7 +1,11 @@
 import Link from "next/link";
 
+import { MobileMenu } from "@features/mobile-menu";
+import { MobileMenuButton } from "@features/mobile-menu";
+
 import { LogoIcon } from "@shared/ui";
 import { MenuIcon } from "@shared/ui";
+import { CloseIcon } from "@shared/ui";
 import { Button } from "@shared/ui";
 
 import { ROUTES } from "@shared/config";
@@ -73,11 +77,60 @@ export const Header = () => {
 
         {/* Mobile Actions */}
         <div className="xl:hidden">
-          <button className="flex">
+          <MobileMenuButton mode="open" className="flex">
             <MenuIcon aria-hidden="true" width={24} height={24} />
-          </button>
+          </MobileMenuButton>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      <MobileMenu>
+        <div className="container flex h-full flex-col justify-between">
+          <div className="flex min-h-32 items-center justify-end xl:min-h-50 xl:py-14">
+            <MobileMenuButton mode="close">
+              <CloseIcon aria-hidden={true} width={24} height={24} />
+            </MobileMenuButton>
+          </div>
+
+          {/* Mobile Navigation */}
+          <nav>
+            <ul className="flex flex-col gap-y-17 text-center">
+              {navigation.map(({ key, href, title }) => (
+                <li key={key}>
+                  <NavigationLink
+                    className="text-secondary-500 aria-[current]:text-primary-500 transition-colors duration-300"
+                    href={href}
+                  >
+                    {title}
+                  </NavigationLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="flex justify-center gap-x-6 pb-50">
+            <Button
+              as={Link}
+              variant="secondary"
+              size="large"
+              href={ROUTES.AUTH.LOGIN}
+              className="px-10"
+            >
+              Sign In
+            </Button>
+
+            <Button
+              as={Link}
+              variant="primary"
+              size="large"
+              href={ROUTES.GENERAL.CONTACT}
+              className="px-10"
+            >
+              Book a Call
+            </Button>
+          </div>
+        </div>
+      </MobileMenu>
     </header>
   );
 };

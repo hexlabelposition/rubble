@@ -9,7 +9,7 @@ import { navigation } from "../config/navigation";
 export const Hero = () => {
   return (
     <section id="hero" className="py-12 xl:py-24 xl:pt-0">
-      <div className="bg-hero relative min-h-284 rounded-md px-6 py-30 lg:aspect-1344/756 xl:rounded-xl xl:py-40">
+      <div className="bg-hero relative min-h-284 rounded-md px-6 py-30 lg:aspect-1344/756 lg:min-h-auto xl:rounded-xl xl:py-40">
         <header className="text-primary-0 mx-auto mb-10 flex max-w-lg flex-col items-center gap-y-4 text-center text-balance xl:mb-20 xl:max-w-4xl xl:gap-y-10">
           <h1 className="text-4xl font-semibold lg:text-5xl xl:text-6xl 2xl:text-8xl">
             Discover Your Dream Home Right at Your Fingertips

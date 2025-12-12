@@ -26,7 +26,7 @@ export const MobileMenu = ({ children, className, refs }: MobileMenuProps) => {
   const closeMenu = useMobileMenuStore((state) => state.closeMenu);
   const pathname = usePathname();
   const { openButtonRef, closeButtonRef } = refs || {};
-  const isDesktop = useMediaQuery("(min-width: 1536px)");
+  const isDesktop = useMediaQuery("(min-width: 1280px)");
 
   // Close the mobile menu when changing the route
   useEffect(() => {
@@ -39,29 +39,29 @@ export const MobileMenu = ({ children, className, refs }: MobileMenuProps) => {
   }, [isDesktop, closeMenu]);
 
   return (
-    <FocusOn
-      enabled={isOpen}
-      scrollLock={true}
-      onActivation={() => {
-        closeButtonRef?.current?.focus();
-      }}
-      onDeactivation={() => {
-        openButtonRef?.current?.focus();
-      }}
-      style={{ height: "100%" }}
+    <motion.div
+      inert={!isOpen}
+      initial={{ x: "100%" }}
+      animate={{ x: isOpen ? 0 : " 100%" }}
+      transition={{ ease: "easeInOut", duration: 0.3 }}
+      className={cn(
+        "bg-primary-0 fixed inset-0 z-50 overflow-hidden xl:hidden",
+        className,
+      )}
     >
-      <motion.div
-        inert={!isOpen}
-        initial={{ x: "100%" }}
-        animate={{ x: isOpen ? 0 : " 100%" }}
-        transition={{ ease: "easeInOut", duration: 0.3 }}
-        className={cn(
-          "bg-primary-0 fixed inset-0 z-50 overflow-hidden 2xl:hidden",
-          className,
-        )}
+      <FocusOn
+        enabled={isOpen}
+        scrollLock={true}
+        onActivation={() => {
+          closeButtonRef?.current?.focus();
+        }}
+        onDeactivation={() => {
+          openButtonRef?.current?.focus();
+        }}
+        style={{ height: "100%" }}
       >
         {children}
-      </motion.div>
-    </FocusOn>
+      </FocusOn>
+    </motion.div>
   );
 };

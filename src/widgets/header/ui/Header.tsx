@@ -6,6 +6,7 @@ import { Button } from "@shared/ui";
 
 import { ROUTES } from "@shared/config";
 
+import { NavigationLink } from "./NavigationLink";
 import { navigation } from "../config/navigation";
 
 export const Header = () => {
@@ -34,7 +35,12 @@ export const Header = () => {
         <ul className="flex gap-x-17">
           {navigation.map(({ key, href, title }) => (
             <li key={key}>
-              <Link href={href}>{title}</Link>
+              <NavigationLink
+                className="text-secondary-500 aria-[current]:text-primary-500 transition-colors duration-300"
+                href={href}
+              >
+                {title}
+              </NavigationLink>
             </li>
           ))}
         </ul>

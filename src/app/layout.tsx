@@ -1,5 +1,7 @@
 import { Manrope } from "next/font/google";
+
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
 
 import "./global.css";
 
@@ -13,6 +15,12 @@ const manrope = Manrope({
   adjustFontFallback: true,
   fallback: ["sans-serif"],
 });
+
+export const metadata: Metadata = {
+  title: "Rubble - Real Estate Platform",
+  description:
+    "Discover, Buy, and Sell Properties with Ease on Rubble - Your Ultimate Real Estate Platform.",
+};
 
 interface RootLayoutProps {
   children: ReactNode;

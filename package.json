@@ -22,12 +22,16 @@
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-separator": "^1.1.8",
+    "motion": "^12.23.26",
     "next": "16.0.7",
     "path-to-regexp": "^8.3.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "react-focus-on": "^3.10.1",
     "tailwind-merge": "^3.4.0",
-    "tailwind-variants": "^3.2.2"
+    "tailwind-variants": "^3.2.2",
+    "usehooks-ts": "^3.1.1",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

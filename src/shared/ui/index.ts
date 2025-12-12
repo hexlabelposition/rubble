@@ -2,6 +2,7 @@ export { Button } from "./kit/Button";
 export { Accordion } from "./kit/Accordion";
 export { Separator } from "./kit/Separator";
 export { Section } from "./kit/Section";
+export { Input } from "./kit/Input";
 
 export { LogoIcon } from "./icons/LogoIcon";
 export { MenuIcon } from "./icons/MenuIcon";

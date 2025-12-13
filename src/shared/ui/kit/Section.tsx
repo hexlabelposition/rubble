@@ -1,5 +1,8 @@
 import { cn } from "tailwind-variants";
+
 import type { ComponentPropsWithoutRef } from "react";
+
+// =================================================== Root =================================================== //
 
 type SectionRootProps = ComponentPropsWithoutRef<"section">;
 
@@ -12,6 +15,8 @@ const Root = ({ className, ...props }: SectionRootProps) => {
   );
 };
 
+// =================================================== Header =================================================== //
+
 type SectionHeaderProps = ComponentPropsWithoutRef<"header">;
 
 const Header = ({ className, ...props }: SectionHeaderProps) => {
@@ -22,6 +27,8 @@ const Header = ({ className, ...props }: SectionHeaderProps) => {
     />
   );
 };
+
+// =================================================== Label =================================================== //
 
 type SectionLabelProps = ComponentPropsWithoutRef<"p">;
 
@@ -37,6 +44,8 @@ const Label = ({ className, ...props }: SectionLabelProps) => {
   );
 };
 
+// =================================================== Title =================================================== //
+
 type SectionTitleProps = ComponentPropsWithoutRef<"h2">;
 
 const Title = ({ className, ...props }: SectionTitleProps) => {
@@ -44,6 +53,8 @@ const Title = ({ className, ...props }: SectionTitleProps) => {
     <h2 className={cn("mb-4 text-xl font-semibold", className)} {...props} />
   );
 };
+
+// ================================================= Description ================================================= //
 
 type SectionDescriptionProps = ComponentPropsWithoutRef<"p">;
 
@@ -56,10 +67,12 @@ const Description = ({ className, ...props }: SectionDescriptionProps) => {
   );
 };
 
+// =================================================== Export =================================================== //
+
 export const Section = {
   Root,
   Header,
   Label,
   Title,
   Description,
-};
+} as const;

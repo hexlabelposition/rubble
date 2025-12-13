@@ -1,17 +1,21 @@
 import * as RadixAccordion from "@radix-ui/react-accordion";
 import { cn } from "tailwind-variants";
+
 import type { ComponentPropsWithoutRef } from "react";
 
-function Root({
-  ...props
-}: ComponentPropsWithoutRef<typeof RadixAccordion.Root>) {
-  return <RadixAccordion.Root {...props} />;
-}
+// ==================================================== Root ==================================================== //
 
-function Item({
-  className,
-  ...props
-}: ComponentPropsWithoutRef<typeof RadixAccordion.Item>) {
+type AccordionRootProps = ComponentPropsWithoutRef<typeof RadixAccordion.Root>;
+
+const Root = ({ ...props }: AccordionRootProps) => {
+  return <RadixAccordion.Root {...props} />;
+};
+
+// ==================================================== Item ==================================================== //
+
+type AccordionItemProps = ComponentPropsWithoutRef<typeof RadixAccordion.Item>;
+
+const Item = ({ className, ...props }: AccordionItemProps) => {
   return (
     <RadixAccordion.Item
       className={cn(
@@ -21,13 +25,15 @@ function Item({
       {...props}
     />
   );
-}
+};
 
-function Trigger({
-  children,
-  className,
-  ...props
-}: ComponentPropsWithoutRef<typeof RadixAccordion.Trigger>) {
+// =================================================== Trigger =================================================== //
+
+type AccordionTriggerProps = ComponentPropsWithoutRef<
+  typeof RadixAccordion.Trigger
+>;
+
+const Trigger = ({ children, className, ...props }: AccordionTriggerProps) => {
   return (
     <RadixAccordion.Header className="flex">
       <RadixAccordion.Trigger
@@ -38,17 +44,18 @@ function Trigger({
         {...props}
       >
         {children}
-        <div>Icon</div>
       </RadixAccordion.Trigger>
     </RadixAccordion.Header>
   );
-}
+};
 
-function Content({
-  children,
-  className,
-  ...props
-}: ComponentPropsWithoutRef<typeof RadixAccordion.Content>) {
+// =================================================== Content =================================================== //
+
+type AccordionContentProps = ComponentPropsWithoutRef<
+  typeof RadixAccordion.Content
+>;
+
+const Content = ({ children, className, ...props }: AccordionContentProps) => {
   return (
     <RadixAccordion.Content
       className="data-[state=closed]:animate-radix-accordion-up data-[state=open]:animate-radix-accordion-down overflow-hidden"
@@ -64,11 +71,13 @@ function Content({
       </div>
     </RadixAccordion.Content>
   );
-}
+};
+
+// =================================================== Export =================================================== //
 
 export const Accordion = {
   Root,
   Item,
   Trigger,
   Content,
-};
+} as const;

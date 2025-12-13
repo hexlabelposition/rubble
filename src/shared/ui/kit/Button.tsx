@@ -34,14 +34,14 @@ type ButtonProps<T extends ElementType> = {
 } & ComponentPropsWithRef<T> &
   VariantProps<typeof buttonVariants>;
 
-function Button<T extends ElementType = "button">({
+export const Button = <T extends ElementType = "button">({
   as,
   variant,
   size,
   withIcon,
   className,
   ...props
-}: ButtonProps<T>) {
+}: ButtonProps<T>) => {
   const Component = as || "button";
   return (
     <Component
@@ -49,6 +49,4 @@ function Button<T extends ElementType = "button">({
       {...props}
     />
   );
-}
-
-export { Button };
+};

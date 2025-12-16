@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    // ESLint
+    "dbaeumer.vscode-eslint",
+    // Prettier
+    "esbenp.prettier-vscode",
+    // Tailwind CSS IntelliSense
+    "bradlc.vscode-tailwindcss"
+  ]
+}

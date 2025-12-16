@@ -1,0 +1,15 @@
+{
+  // Set cross-platform line endings to ensure consistency across all operating systems and prevent CI/CD issues
+  "files.eol": "\n",
+
+  // Set Prettier as the default formatter for consistent code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "files.associations": {
+    // Set LICENSE files to plaintext to avoid incorrect language mode detection.
+    "LICENSE": "plaintext",
+
+    // Set Tailwind CSS language mode for CSS files for better IntelliSense and syntax highlighting.
+    "*.css": "tailwindcss"
+  }
+}

@@ -11,5 +11,11 @@
 
     // Set Tailwind CSS language mode for CSS files for better IntelliSense and syntax highlighting.
     "*.css": "tailwindcss"
-  }
+  },
+
+  // Enable autocompletion and syntax highlighting for Tailwind Variants.
+  // https://www.tailwind-variants.org/docs/getting-started#intellisense-setup-optional
+  "tailwindCSS.experimental.classRegex": [
+    ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ]
 }

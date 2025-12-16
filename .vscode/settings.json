@@ -15,7 +15,5 @@
 
   // Enable autocompletion and syntax highlighting for Tailwind Variants.
   // https://www.tailwind-variants.org/docs/getting-started#intellisense-setup-optional
-  "tailwindCSS.experimental.classRegex": [
-    ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ]
+  "tailwindCSS.classFunctions": ["tv"]
 }

@@ -6,7 +6,7 @@
  */
 const config = {
   plugins: ["prettier-plugin-tailwindcss"],
-  tailwindFunctions: ["tv", "cn", "cnMerge", "cx"],
+  tailwindFunctions: ["tv"],
 };
 
 export default config;

@@ -2,6 +2,13 @@
   "name": "rubble",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Vladyslav Kudriashov",
+    "email": "hexlabelposition@gmail.com",
+    "url": "https://github.com/hexlabelposition"
+  },
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

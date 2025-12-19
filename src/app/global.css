@@ -36,6 +36,8 @@
   --color-secondary-800: #6e6e6e;
   --color-secondary-900: #4e4e4e;
 
+  --color-fallback-hero: #7d8a91;
+
   --spacing: 0.125rem;
 
   --breakpoint-sm: 40rem;
@@ -68,6 +70,7 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
 
+  /* NOTE: Used once in @widgets/hero */
   --blur-md: 0.25rem;
 }
 
@@ -75,4 +78,29 @@
 /* https://tailwindcss.com/docs/upgrade-guide#container-configuration */
 @utility container {
   @apply mx-auto px-12 xl:px-24;
+}
+
+/* I sets background image classes as a utility to see hints in the editor and be able to override these styles. */
+@utility bg-hero {
+  background-image: url("/hero.webp");
+  background-color: var(--color-fallback-hero);
+  background-position: 60% 0%;
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+
+  /* This is a one-time utility, so I took the liberty of writing media queries in it. */
+  @media (min-width: 1024px) {
+    background-position: 60% 15%;
+    background-size: cover;
+  }
+}
+
+/* Used primarily where borders are needed: cards, buttons, tiles. */
+@utility border-1.2 {
+  border-width: 1.2px;
+}
+
+/* Used primarily for separators(dividers)(@shared/ui/kit/Separator). */
+@utility h-1.2 {
+  height: 1.2px;
 }

@@ -1,0 +1,18 @@
+export const routes = {
+  home: "/",
+  about: "/about",
+  contact: "/contact",
+  joinUs: "/join-us",
+  property: "/property",
+  propertyDetails: (id: string) => `/property/${id}`,
+  agent: "/agent",
+  agentDetails: (id: string) => `/agent/${id}`,
+  blog: "/blog",
+  blogDetails: (id: string) => `/blog/${id}`,
+  login: "/login",
+  register: "/register",
+  privacyPolicy: "/privacy-policy",
+  termsOfUse: "/terms-of-use",
+  chatSupport: "/",
+  career: "/",
+} as const;

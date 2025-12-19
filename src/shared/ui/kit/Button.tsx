@@ -12,8 +12,9 @@ const buttonVariants = tv({
       secondary: "border-secondary-200 bg-primary-0 text-primary-500",
     },
     size: {
-      "extra-small": "min-h-16 rounded-sm border px-8 text-xs font-semibold",
-      small: "min-h-18 rounded-sm border px-8 text-sm font-semibold",
+      "extra-small":
+        "border-1.2 min-h-16 rounded-sm px-8 text-xs font-semibold",
+      small: "border-1.2 min-h-18 rounded-sm px-8 text-sm font-semibold",
       medium: "min-h-20 rounded-md border-2 px-8 text-base font-semibold",
       large: "min-h-24 rounded-md border-2 px-8 text-base font-semibold",
     },

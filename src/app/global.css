@@ -72,6 +72,16 @@
 
   /* NOTE: Used once in @widgets/hero */
   --blur-md: 0.25rem;
+
+  --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
 }
 
 /* Extend the container using custom styles. */

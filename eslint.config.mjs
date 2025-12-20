@@ -27,6 +27,7 @@ const eslintConfig = defineConfig([
       ],
     },
   },
+  globalIgnores([".tmp/**"]),
 ]);
 
 export default eslintConfig;

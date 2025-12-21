@@ -1,5 +1,6 @@
 {
   "name": "rubble",
+  "description": "Modern web application to buy, rent, and sell property, built with Next.js, TypeScript and Feature-Sliced Design",
   "version": "0.1.0",
   "private": true,
   "author": {

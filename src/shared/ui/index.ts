@@ -1,5 +1,6 @@
 // module: kit
 export { Button } from "./kit/Button";
+export { Label } from "./kit/Label";
 
 // module: icons
 export { BuildingsIcon } from "./icons/BuildingsIcon";

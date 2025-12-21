@@ -10,6 +10,7 @@ export { MoveUpRightIcon } from "./icons/MoveUpRightIcon";
 export { CalendarDaysIcon } from "./icons/CalendarDaysIcon";
 export { DollarSquareIcon } from "./icons/DollarSquareIcon";
 export { MapPinCheckInsideIcon } from "./icons/MapPinCheckInsideIcon";
+export { ChevronDownIcon } from "./icons/ChevronDownIcon";
 
 // module: layout
 export { Section } from "./layout/Section";

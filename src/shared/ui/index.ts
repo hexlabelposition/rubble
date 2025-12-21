@@ -2,6 +2,7 @@
 export { Button } from "./kit/Button";
 export { Label } from "./kit/Label";
 export { Input } from "./kit/Input";
+export { Textarea } from "./kit/Textarea";
 
 // module: icons
 export { BuildingsIcon } from "./icons/BuildingsIcon";

@@ -14,7 +14,7 @@ export const ServicesWeProvide = () => {
         </Section.Description>
       </Section.Header>
 
-      <ul className="mx-auto grid max-w-216 gap-8 xl:max-w-full xl:grid-cols-3 xl:gap-12">
+      <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 xl:gap-12">
         {services.map(
           ({ key, title, description, image: { src, width, height, alt } }) => (
             <li key={key}>
@@ -32,7 +32,7 @@ export const ServicesWeProvide = () => {
                   {title}
                 </h3>
 
-                <p className="text-secondary-500 text-xs text-balance xl:text-base">
+                <p className="text-secondary-500 text-2xs text-balance xl:text-base">
                   {description}
                 </p>
               </article>

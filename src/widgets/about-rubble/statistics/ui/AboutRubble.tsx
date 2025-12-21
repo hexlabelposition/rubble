@@ -16,7 +16,7 @@ export const AboutRubble = () => {
         </Section.Description>
       </Section.Header>
 
-      <div className="mx-auto grid max-w-216 gap-8 xl:max-w-full xl:grid-cols-[16fr_10fr] xl:gap-12">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[16fr_10fr] xl:gap-12">
         <div className="border-secondary-200 rounded-md border p-8 xl:rounded-xl xl:border-2 xl:p-10">
           <h3 className="mb-4 font-semibold xl:text-2xl">
             Partner for Every Property Need
@@ -35,7 +35,7 @@ export const AboutRubble = () => {
             alt=""
             loading="lazy"
             sizes="(max-width: 640px) 100vw, 295px"
-            className="aspect-295/220 h-auto w-full rounded-md object-cover xl:aspect-auto xl:rounded-lg"
+            className="aspect-295/220 h-auto w-full rounded-md object-cover lg:aspect-auto xl:rounded-lg"
           />
         </div>
 
@@ -43,7 +43,7 @@ export const AboutRubble = () => {
           {statistics.map(({ key, title, description, Icon }) => (
             <div
               key={key}
-              className="border-secondary-200 flex h-full min-h-87 flex-col justify-between rounded-lg border p-8 xl:rounded-xl xl:border-2 xl:p-12"
+              className="border-secondary-200 flex h-full flex-col justify-between rounded-lg border p-8 xl:rounded-xl xl:border-2 xl:p-12"
             >
               <div className="flex justify-end">
                 <div className="border-secondary-200 flex size-18 items-center justify-center rounded-full border xl:size-22 xl:border-2">
@@ -52,7 +52,7 @@ export const AboutRubble = () => {
               </div>
 
               <div className="flex flex-col-reverse gap-y-6 xl:gap-y-10">
-                <dt className="text-xs xl:text-base">{title}</dt>
+                <dt className="text-2xs xl:text-base">{title}</dt>
                 <dd className="text-2xl xl:text-5xl">{description}+</dd>
               </div>
             </div>

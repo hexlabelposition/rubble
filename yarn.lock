@@ -146,6 +146,25 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
+"@conform-to/dom@1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/dom/-/dom-1.15.1.tgz#2106676c306bf9ed5a01156e26179ad2affaaea7"
+  integrity sha512-iqx7Ftp26zygHJq62eXK2Sibc8LVIW28bt7c1uAEsGaa7IsEzjCbNgrWblXcFHohf7vFMDisgF2kv8oS5c9Dmg==
+
+"@conform-to/react@^1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/react/-/react-1.15.1.tgz#c2a51e1957e1782d3f8dd0aebdfdff6f70d6e42a"
+  integrity sha512-cKH5K6MOiuIUPr9b4Z6UU5KYNv3rUmB35OEiY5F0cHvac8uCGFIh7Qjvm2bUrSloh+asAvpK5cZjxTsgYI93yg==
+  dependencies:
+    "@conform-to/dom" "1.15.1"
+
+"@conform-to/zod@^1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@conform-to/zod/-/zod-1.15.1.tgz#9e9fbd56988947a53b03b2f0f4150fa53f639939"
+  integrity sha512-zWx92qADl3xWjnI9E9dW8RarS3orUN9ldfCLTQfHgJHd5dtORFNxYoxj2qsAM9aYm0E3gZ+2EJq750sDTRrZSg==
+  dependencies:
+    "@conform-to/dom" "1.15.1"
+
 "@emnapi/core@^1.4.3", "@emnapi/core@^1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@emnapi/core/-/core-1.7.1.tgz#3a79a02dbc84f45884a1806ebb98e5746bdfaac4"
@@ -3733,3 +3752,8 @@ yocto-queue@^0.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/zod/-/zod-4.2.0.tgz#01e86f2c2b6d525a1b9fa6dbe78beccad082118f"
   integrity sha512-Bd5fw9wlIhtqCCxotZgdTOMwGm1a0u75wARVEY9HMs1X17trvA/lMi4+MGK5EUfYkXVTbX8UDiDKW4OgzHVUZw==
+
+zod@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-4.2.1.tgz#07f0388c7edbfd5f5a2466181cb4adf5b5dbd57b"
+  integrity sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==

@@ -52,7 +52,7 @@ export const Hero = () => {
                 <Link href={href} className={cn("absolute", containerPosition)}>
                   <div className="relative">
                     {/* An element that looks like a button  */}
-                    <div className="bg-primary-500/24 text-primary-0 text-2xs inline-flex min-h-14 items-center rounded-sm px-4 backdrop-blur-md xl:min-h-17 xl:rounded-md xl:px-6 xl:text-xs">
+                    <div className="bg-primary-500/24 text-primary-0 text-2xs inline-flex min-h-14 items-center rounded-sm px-4 backdrop-blur-[4px] xl:min-h-17 xl:rounded-md xl:px-6 xl:text-xs">
                       {title}
                     </div>
 
@@ -60,7 +60,7 @@ export const Hero = () => {
                     <div
                       aria-hidden="true"
                       className={cn(
-                        "bg-primary-500/24 absolute size-6 rounded-full backdrop-blur-md xl:size-8",
+                        "bg-primary-500/24 absolute size-6 rounded-full backdrop-blur-[4px] xl:size-8",
                         pointPosition,
                       )}
                     >

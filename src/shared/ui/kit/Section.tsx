@@ -10,10 +10,7 @@ type SectionRootProps = ComponentPropsWithoutRef<"section">;
 const Root = ({ className, ...props }: SectionRootProps) => {
   return (
     <section
-      className={cn(
-        "flex flex-col gap-y-14 py-20 xl:gap-y-20 xl:py-40",
-        className,
-      )}
+      className={cn("flex flex-col gap-y-14 py-20", className)}
       {...props}
     />
   );
@@ -40,7 +37,7 @@ const Label = ({ className, ...props }: SectionLabelProps) => {
   return (
     <p
       className={cn(
-        "text-2xs text-secondary-500 border-secondary-200 mb-6 inline-flex min-h-12 items-center justify-center rounded-xs border px-4 xl:mb-8 xl:min-h-16 xl:rounded-sm xl:border-2 xl:px-6 xl:text-sm",
+        "text-2xs text-secondary-500 border-secondary-200 mb-6 inline-flex min-h-12 items-center justify-center rounded-xs border px-4",
         className,
       )}
       {...props}
@@ -62,10 +59,7 @@ const Title = <T extends ElementType = "h2">({
   const Component = as || "h2";
   return (
     <Component
-      className={cn(
-        "mb-4 text-xl font-semibold xl:mb-6 xl:text-6xl",
-        className,
-      )}
+      className={cn("mb-4 text-xl font-semibold", className)}
       {...props}
     />
   );
@@ -78,10 +72,7 @@ type SectionDescriptionProps = ComponentPropsWithoutRef<"p">;
 const Description = ({ className, ...props }: SectionDescriptionProps) => {
   return (
     <p
-      className={cn(
-        "text-secondary-500 text-xs text-balance xl:text-base",
-        className,
-      )}
+      className={cn("text-secondary-500 text-xs text-balance", className)}
       {...props}
     />
   );

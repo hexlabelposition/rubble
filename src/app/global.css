@@ -70,9 +70,6 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
 
-  /* NOTE: Used once in @widgets/hero */
-  --blur-md: 0.25rem;
-
   --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 
   @keyframes ping {

@@ -45,7 +45,7 @@ export default function HomePage() {
               to meet your needs. With top properties and dedicated experts, we
               ensure a seamless experience for buying, selling, or renting.
             </p>
-            <img src="" alt="" />
+            {/* <img src="" alt="" /> */}
           </div>
 
           <dl>
@@ -82,7 +82,7 @@ export default function HomePage() {
         <ul>
           <li>
             <article>
-              <img src="" alt="" />
+              {/* <img src="" alt="" /> */}
 
               <h3>Buy Property</h3>
               <p>
@@ -93,7 +93,7 @@ export default function HomePage() {
           </li>
           <li>
             <article>
-              <img src="" alt="" />
+              {/* <img src="" alt="" /> */}
               <h3>Rent Property</h3>
               <p>
                 Discover the perfect housing solution, whether you need a
@@ -103,7 +103,7 @@ export default function HomePage() {
           </li>
           <li>
             <article>
-              <img src="" alt="" />
+              {/* <img src="" alt="" /> */}
               <h3>Sell Property</h3>
               <p>
                 Sell your property with maximum visibility, easily connect with
@@ -127,7 +127,7 @@ export default function HomePage() {
         <ul>
           <li>
             <article>
-              <img src="" alt="" />
+              {/* <img src="" alt="" /> */}
               <h3>Classic Damara</h3>
               <p>
                 {" "}
@@ -198,7 +198,7 @@ export default function HomePage() {
         </header>
 
         <div>
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
 
           <form>
             <label htmlFor="name">Name</label>

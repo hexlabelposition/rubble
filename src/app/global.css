@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-/* Default theme variable reference */
+/* Default theme variable reference. It can be used to create your own theme. */
 /* https://tailwindcss.com/docs/theme#default-theme-variable-reference */
-
-/* It can be used to create your own theme. */
 
 @theme {
   /* Reset default theme */
@@ -70,6 +68,8 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
 
+  --blur-md: 0.25rem;
+
   --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 
   @keyframes ping {
@@ -100,14 +100,4 @@
     background-position: 60% 15%;
     background-size: cover;
   }
-}
-
-/* Used primarily where borders are needed: cards, buttons, tiles. */
-@utility border-1.2 {
-  border-width: 1.2px;
-}
-
-/* Used primarily for separators(dividers)(@shared/ui/kit/Separator). */
-@utility h-1.2 {
-  height: 1.2px;
 }

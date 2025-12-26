@@ -1,56 +1,13 @@
 import { Hero } from "@widgets/hero";
 import { AboutRubble } from "@widgets/about-rubble/statistics";
+import { ServicesWeProvide } from "@widgets/services-we-provide";
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
       <AboutRubble />
-      <section id="services-we-provide">
-        <header>
-          <p>Services We Provide</p>
-          <h2>Complete Property Solutions</h2>
-          <p>
-            We offer a full range of services to help you find a property, rent
-            or sell as needed.
-          </p>
-        </header>
-
-        <ul>
-          <li>
-            <article>
-              {/* <img src="" alt="" /> */}
-
-              <h3>Buy Property</h3>
-              <p>
-                Find your property with a vast selection of options tailored to
-                ideally match your unique preferences.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              {/* <img src="" alt="" /> */}
-              <h3>Rent Property</h3>
-              <p>
-                Discover the perfect housing solution, whether you need a
-                convenient and temporary stay.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              {/* <img src="" alt="" /> */}
-              <h3>Sell Property</h3>
-              <p>
-                Sell your property with maximum visibility, easily connect with
-                a broad audience of buyers.
-              </p>
-            </article>
-          </li>
-        </ul>
-      </section>
-
+      <ServicesWeProvide />
       <section id="popular-property">
         <header>
           <p>Popular Property</p>

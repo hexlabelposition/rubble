@@ -1,32 +1,9 @@
+import { Hero } from "@widgets/hero";
+
 export default function HomePage() {
   return (
     <main>
-      <section id="hero">
-        <h1>Discover Your Dream Home Right at Your Fingertips</h1>
-        <p>
-          With customized searches, we help you find properties that match your
-          desired location, price and type. Start the journey to your ideal
-          property!
-        </p>
-
-        <div>
-          <a href="">Get Started</a>
-          <button type="button">Watch Demo</button>
-        </div>
-
-        <ul aria-label="Quick links with property search parameters">
-          <li>
-            <a href="">Buy Property</a>
-          </li>
-          <li>
-            <a href="">Rent Property</a>
-          </li>
-          <li>
-            <a href="">Sell Property</a>
-          </li>
-        </ul>
-      </section>
-
+      <Hero />
       <section id="about-rubble">
         <header>
           <p>About Rubble</p>

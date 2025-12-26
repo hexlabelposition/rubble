@@ -1,8 +1,8 @@
 import { tv } from "tailwind-variants";
 
 import type { ElementType } from "react";
-import type { ComponentPropsWithRef } from "react";
 import type { VariantProps } from "tailwind-variants";
+import type { PolymorphicPropsWithRef } from "@shared/type";
 
 const buttonVariants = tv({
   base: "inline-flex shrink-0 items-center justify-center whitespace-nowrap",
@@ -13,8 +13,8 @@ const buttonVariants = tv({
     },
     size: {
       "extra-small":
-        "border-1.2 min-h-16 rounded-sm px-8 text-xs font-semibold",
-      small: "border-1.2 min-h-18 rounded-sm px-8 text-sm font-semibold",
+        "min-h-16 rounded-sm border-[1.2px] px-8 text-xs font-semibold",
+      small: "min-h-18 rounded-sm border-[1.2px] px-8 text-sm font-semibold",
       medium: "min-h-20 rounded-md border-2 px-8 text-base font-semibold",
       large: "min-h-24 rounded-md border-2 px-8 text-base font-semibold",
     },
@@ -30,9 +30,7 @@ const buttonVariants = tv({
   },
 });
 
-type ButtonProps<T extends ElementType> = {
-  as?: T;
-} & ComponentPropsWithRef<T> &
+type ButtonProps<T extends ElementType> = PolymorphicPropsWithRef<T> &
   VariantProps<typeof buttonVariants>;
 
 export const Button = <T extends ElementType = "button">({

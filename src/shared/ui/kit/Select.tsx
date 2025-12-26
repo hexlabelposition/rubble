@@ -19,7 +19,7 @@ const Trigger = ({ children, className, ...props }: SelectTriggerProps) => {
   return (
     <RadixSelect.Trigger
       className={cn(
-        "border-secondary-200 text-primary-500 focus:border-primary-500 hover:border-primary-500 data-placeholder:text-secondary-500 group flex min-h-20 w-auto items-center justify-between gap-7 rounded-sm border px-7 text-sm font-medium transition-colors duration-300 outline-none",
+        "border-secondary-200 text-primary-500 focus:border-primary-500 hover:border-primary-500 data-placeholder:text-secondary-500 group flex min-h-20 w-auto items-center justify-between gap-7 rounded-sm border-[1.2px] px-7 text-sm font-medium transition-colors duration-300 outline-none",
         className,
       )}
       {...props}
@@ -54,7 +54,7 @@ const Content = ({
         position={position}
         align={align}
         className={cn(
-          "bg-primary-0 border-secondary-200 text-primary-500 max-h-(--radix-select-content-available-height) w-(--radix-select-trigger-width) rounded-sm border p-2 text-sm",
+          "bg-primary-0 border-secondary-200 text-primary-500 max-h-(--radix-select-content-available-height) w-(--radix-select-trigger-width) rounded-sm border-[1.2px] p-2 text-sm",
           className,
         )}
         sideOffset={8}

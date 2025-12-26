@@ -37,7 +37,7 @@ const Label = ({ className, ...props }: SectionLabelProps) => {
   return (
     <p
       className={cn(
-        "text-2xs text-secondary-500 border-secondary-200 mb-6 inline-flex min-h-12 items-center justify-center rounded-xs border px-4",
+        "text-2xs text-secondary-500 border-secondary-200 mb-6 inline-flex min-h-12 items-center justify-center rounded-xs border-[1.2px] px-4",
         className,
       )}
       {...props}

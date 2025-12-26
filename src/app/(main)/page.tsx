@@ -1,51 +1,11 @@
 import { Hero } from "@widgets/hero";
+import { AboutRubble } from "@widgets/about-rubble/statistics";
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
-      <section id="about-rubble">
-        <header>
-          <p>About Rubble</p>
-          <h2>Trusted Partner for Your Journey</h2>
-          <p>
-            We manage properties efficiently, ensuring the best renting or
-            selling experience.
-          </p>
-        </header>
-
-        <div>
-          <div>
-            <h3>Partner for Every Property Need</h3>
-            <p>
-              As a leading property platform, we provide full-service solutions
-              to meet your needs. With top properties and dedicated experts, we
-              ensure a seamless experience for buying, selling, or renting.
-            </p>
-            {/* <img src="" alt="" /> */}
-          </div>
-
-          <dl>
-            <div>
-              <dt>Properties Available</dt>
-              <dd>800+</dd>
-            </div>
-            <div>
-              <dt>Satisfied Customer</dt>
-              <dd>460+</dd>
-            </div>
-            <div>
-              <dt>Total Partners</dt>
-              <dd>280+</dd>
-            </div>
-            <div>
-              <dt>Awards Winning</dt>
-              <dd>120+</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
+      <AboutRubble />
       <section id="services-we-provide">
         <header>
           <p>Services We Provide</p>

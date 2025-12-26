@@ -2,6 +2,7 @@ import { Hero } from "@widgets/hero";
 import { AboutRubble } from "@widgets/about-rubble/statistics";
 import { ServicesWeProvide } from "@widgets/services-we-provide";
 import { PopularProperty } from "@widgets/popular-property";
+import { HowItWork } from "@widgets/how-it-work";
 
 export default function HomePage() {
   return (
@@ -10,56 +11,7 @@ export default function HomePage() {
       <AboutRubble />
       <ServicesWeProvide />
       <PopularProperty />
-
-      <section id="how-it-works">
-        <header>
-          <p>How it Work</p>
-          <h2>Journey to Achieve Property Success</h2>
-          <p>
-            Explore our process from understanding your needs to finding the
-            right property.
-          </p>
-        </header>
-
-        <ol>
-          <li>
-            <h3>Discover Property</h3>
-            <p>
-              Find a wide selection of properties that perfectly suit your needs
-              and preferences. Browse a comprehensive list of properties that
-              offer detailed information.
-            </p>
-          </li>
-
-          <li>
-            <h3>Schedule Visit</h3>
-            <p>
-              Once you find a property of interest, schedule a visit at your
-              convenience. Choose a date and time, and our team will ensure a
-              smooth viewing experience.
-            </p>
-          </li>
-
-          <li>
-            <h3>Property Visit</h3>
-            <p>
-              Visit, explore the neighborhood, and ensure every detail meets
-              your expectations. Our team will be on hand to answer questions
-              and provide information.
-            </p>
-          </li>
-
-          <li>
-            <h3>Finalize The Deal</h3>
-            <p>
-              After the visit, if you&apos;re ready, we&apos;ll guide you
-              through a secure transaction, handling everything from negotiation
-              to paperwork until you&apos;re the official owner.
-            </p>
-          </li>
-        </ol>
-      </section>
-
+      <HowItWork />
       <section id="contact-us">
         <header>
           <p>Contact Us</p>

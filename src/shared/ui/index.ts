@@ -5,6 +5,7 @@ export { Input } from "./kit/Input";
 export { Textarea } from "./kit/Textarea";
 export { Select } from "./kit/Select";
 export { Section } from "./kit/Section";
+export { Separator } from "./kit/Separator";
 
 // module: icons
 export { BuildingsIcon } from "./icons/BuildingsIcon";

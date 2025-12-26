@@ -13,3 +13,6 @@ export { CalendarDaysIcon } from "./icons/CalendarDaysIcon";
 export { DollarSquareIcon } from "./icons/DollarSquareIcon";
 export { MapPinCheckInsideIcon } from "./icons/MapPinCheckInsideIcon";
 export { ChevronDownIcon } from "./icons/ChevronDownIcon";
+export { LogoIcon } from "./icons/LogoIcon";
+export { MenuIcon } from "./icons/MenuIcon";
+export { CloseIcon } from "./icons/CloseIcon";

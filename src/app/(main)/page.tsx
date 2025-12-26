@@ -1,6 +1,7 @@
 import { Hero } from "@widgets/hero";
 import { AboutRubble } from "@widgets/about-rubble/statistics";
 import { ServicesWeProvide } from "@widgets/services-we-provide";
+import { PopularProperty } from "@widgets/popular-property";
 
 export default function HomePage() {
   return (
@@ -8,30 +9,7 @@ export default function HomePage() {
       <Hero />
       <AboutRubble />
       <ServicesWeProvide />
-      <section id="popular-property">
-        <header>
-          <p>Popular Property</p>
-          <h2>Explore Diverse Property Listings</h2>
-          <p>
-            Discover properties for every need, from cozy homes to luxury
-            estates.
-          </p>
-        </header>
-
-        <ul>
-          <li>
-            <article>
-              {/* <img src="" alt="" /> */}
-              <h3>Classic Damara</h3>
-              <p>
-                {" "}
-                <data value="480500">$480,500</data>
-              </p>
-              <address>Seattle, United States</address>
-            </article>
-          </li>
-        </ul>
-      </section>
+      <PopularProperty />
 
       <section id="how-it-works">
         <header>

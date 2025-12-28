@@ -15,6 +15,18 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
   ]),
   eslintConfigPrettier,
+  {
+    rules: {
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        {
+          disallowTypeAnnotations: true,
+          fixStyle: "separate-type-imports",
+          prefer: "type-imports",
+        },
+      ],
+    },
+  },
 ]);
 
 export default eslintConfig;
